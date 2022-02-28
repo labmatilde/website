@@ -17,9 +17,9 @@ add_theme_support( 'html5', array('style','script', ) );
 
 function add_theme_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
-    wp_enqueue_style( 'materialize', get_template_directory_uri() . '/css/materialize.min.css', array(), '1.0', 'all');
-    wp_enqueue_style( 'icon', get_template_directory_uri() . '/css/icon.css', array(), '1.0', 'all');
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/materialize.min.js', array ( 'jquery' ), 1.1, true);
+    wp_enqueue_style( 'materialize', get_template_directory_uri() . '/assets/css/materialize.min.css', array(), '1.0', 'all');
+    wp_enqueue_style( 'icon', get_template_directory_uri() . '/assets/css/icon.css', array(), '1.0', 'all');
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/materialize.min.js', array ( 'jquery' ), 1.1, true);
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
