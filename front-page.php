@@ -1,15 +1,15 @@
-<?php 
+<?php
+/**
+* Template Name: Index
+*
+* @package Labmatilde
+* @subpackage lam
+* @since Lar Assistencial Matilde 1.0
+*/
 
+echo('front page');
 get_header();
- 
-if ( have_posts() ) : 
-    while ( have_posts() ) : the_post();
-        get_content();
-    endwhile;
-else :
-    _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
-endif;
- 
+
 get_sidebar();
 
 get_footer();

@@ -2,6 +2,7 @@
 echo('header page');
 wp_nav_menu( $args );
 get_search_form();
+body_class();
 /**
 wp_nav_menu( array $args = array(
     'menu'              => "", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
