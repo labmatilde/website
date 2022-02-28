@@ -1,3 +1,4 @@
-<?php
 
-echo('footer aqui');
+    </body>
+</html>
+<?php
