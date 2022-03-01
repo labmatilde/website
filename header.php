@@ -52,12 +52,12 @@ $args_mobile = array(
 
 <nav class="nav-extended">
 <div class="container">
-  <div class="row">
-    <div class="col s12">
-    <div class="nav-wrapper">
+<div class="row">
+<div class="col s12">
+<div class="nav-wrapper blue lighten-5">
 <a href="<?php home_url(); ?>" class="brand-logo">
 <?php if ( function_exists( 'the_custom_logo' ) ) {
-  the_custom_logo();
+the_custom_logo();
 } ?></a>
 <a href="#" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 <ul class="right hide-on-med-and-down">
@@ -65,15 +65,15 @@ $args_mobile = array(
 <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
 <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
 <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-</ul>
-</div>
-<div class="nav-content">
+</ul> <!-- hide-on-med-and-down -->
+</div> <!-- nav-wrapper -->
+<div class="nav-content blue darken-1">
 <?php wp_nav_menu( $args ); ?>
-</div>
-    </div>
-  </div>
-</div>
-</nav>
+</div> <!-- nav-content -->
+</div> <!-- col -->
+</div> <!-- row -->
+</div> <!-- container -->
+</nav> <!-- nav-extended -->
 
 <?php 
 wp_nav_menu( $args_mobile );
