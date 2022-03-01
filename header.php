@@ -50,7 +50,7 @@ $args_mobile = array(
 <?php #wp_body_open(); ?>
 <body <?php body_class(); ?>>
 
-<nav class="blue lighten-5 hide-on-med-and-down">
+<nav class="top-menu blue lighten-5 hide-on-med-and-down">
 <div class="container">
 <div class="col s12">
 <div class="nav-wrapper">
@@ -68,16 +68,16 @@ $args_mobile = array(
 </div>
 </nav>
 
-  <nav class="blue darken-1">
-  <div class="container">
-    <div class="col s12">
-    <div class="nav-wrapper">
-      <a href="<?php home_url(); ?>" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <?php wp_nav_menu( $args ); ?>
-    </div> <!-- nav-wrapper -->
-    </div>
-  </div>
-  </nav>
+<nav class="nav-menu blue darken-1">
+<div class="container">
+<div class="col s12">
+<div class="nav-wrapper">
+<a href="<?php home_url(); ?>" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+<?php wp_nav_menu( $args ); ?>
+</div> <!-- nav-wrapper -->
+</div>
+</div>
+</nav>
 <?php 
 wp_nav_menu( $args_mobile );
   
