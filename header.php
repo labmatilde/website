@@ -57,7 +57,7 @@ $args_mobile = array(
         <div class="nav-wrapper">
           <a href="<?php home_url(); ?>" class="brand-logo">
           <?php if ( function_exists( 'the_custom_logo' ) ) {
-            the_custom_logo('logo-menu-primary');
+            the_custom_logo();
           } ?>
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
