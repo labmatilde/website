@@ -67,13 +67,15 @@ if ( ! function_exists( 'lam_register_nav_menu' ) ) {
 
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'title-tag' );
-add_theme_support( 'logo-menu-primary', array(
+add_theme_support( 'custom-logo', array(
     'height'                => 60,
     'width'                 => 125,
     'flex-height'           => true,
     'flex-width'            => true,
     'header-text'           => array( 'site-title', 'site-description' ),
 ) );
+	
+#add_image_size( 'custom-size', 220, 180, true );
 
 	
 add_theme_support( 'post-thumbnails' );
