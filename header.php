@@ -61,9 +61,9 @@ $args_mobile = array(
           } ?>
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
+            <li><a href="sass.html"><i class=" Medium material-icons">email</i></a></li>
+            <li><a href="badges.html"><i class="Medium material-icons">refresh</i></a></li>
+            <li><a href="collapsible.html"><i class="Medium material-icons">refresh</i></a></li>
           </ul>
         </div> <!-- col -->
       </div> <!-- row -->
