@@ -50,14 +50,14 @@ $args_mobile = array(
 <?php #wp_body_open(); ?>
 <body <?php body_class(); ?>>
 
-<nav class="blue lighten-5">
+<nav class="blue lighten-5 hide-on-med-and-down">
   <div class="nav-wrapper">
     <a href="<?php home_url(); ?>" class="brand-logo">
     <?php if ( function_exists( 'the_custom_logo' ) ) {
       the_custom_logo();
     } ?>
     </a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <ul class="right">
       <li><a href="sass.html"><i class=" Medium material-icons">refresh</i></a></li>
       <li><a href="badges.html"><i class="Medium material-icons">refresh</i></a></li>
       <li><a href="collapsible.html"><i class="Medium material-icons">refresh</i></a></li>
