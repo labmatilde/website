@@ -41,8 +41,9 @@ $args = array(
     <?php wp_head(); ?>
 
   </head>
-<body class="<?php body_class(); ?>">
-<?php #wp_body_open(); ?>
+<?php wp_body_open(); ?>
+<body <?php body_class(); ?>>
+
     <nav>
 
     <?php wp_nav_menu( $args ); ?>
