@@ -79,8 +79,32 @@ $args_mobile = array(
     <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
   </div>
 </nav>
-  
-  #get_search_form();
+
+<ul id="slide-out" class="side-nav">
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li class="bold">
+            <a class="collapsible-header waves-effect waves-teal active">Pages</a>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="active" href="horizontal-half.html">Horizontal Halves</a></li>
+                    <li><a href="sierra.html">Zoom Out</a></li>
+                    <li><a href="circle-reveal.html">Circle Reveal</a></li>
+                    <li><a href="phone-wall.html">Phone Wall</a></li>
+                    <li><a href="element-transitions.html">Element Transitions</a></li>
+                    <li><a href="basic-elements.html">Basic Elements</a></li>
+                    <li><a href="card-shuffle.html">Shuffle</a></li>
+                    <li><a href="postcards.html">Postcards</a></li>
+                </ul>
+            </div>
+            </li>
+        </ul>
+    </li>
+    <li><a class="waves-effect waves-teal" href="blog.html">Blog</a></li>
+    <li><a class="waves-effect waves-teal" href="team.html">Team</a></li>
+    <li><a class="waves-effect waves-teal" href="docs/about.html">Docs</a></li>
+    <li><a class="waves-effect waves-teal" href="#">Buy Now!</a></li>
+</ul>
 
 
 

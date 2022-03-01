@@ -10,73 +10,47 @@
 get_header(); 
 ?>
 
-    <ul id="slide-out" class="side-nav">
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li class="bold">
-            <a class="collapsible-header waves-effect waves-teal active">Pages</a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a class="active" href="horizontal-half.html">Horizontal Halves</a></li>
-                <li><a href="sierra.html">Zoom Out</a></li>
-                <li><a href="circle-reveal.html">Circle Reveal</a></li>
-                <li><a href="phone-wall.html">Phone Wall</a></li>
-                <li><a href="element-transitions.html">Element Transitions</a></li>
-                <li><a href="basic-elements.html">Basic Elements</a></li>
-                <li><a href="card-shuffle.html">Shuffle</a></li>
-                <li><a href="postcards.html">Postcards</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
-      <li><a class="waves-effect waves-teal" href="blog.html">Blog</a></li>
-      <li><a class="waves-effect waves-teal" href="team.html">Team</a></li>
-      <li><a class="waves-effect waves-teal" href="docs/about.html">Docs</a></li>
-      <li><a class="waves-effect waves-teal" href="#">Buy Now!</a></li>
-    </ul>
-
-    <div class="header full-height horizontal-half-transition">
-      <div class="background">
-        <img src="http://placehold.it/1440x900" alt="">
-      </div>
-      <div class="phone-preview-sizer">
-        <div class="phone-preview"></div>
-        <div class="image-container active" style="background-image:url(http://placehold.it/530x990)"></div>
-        <div class="image-container" style="background-image:url(http://placehold.it/530x990)"></div>
-        <div class="image-container" style="background-image:url(http://placehold.it/530x990)"></div>
-      </div>
-      <div class="horizontal-half-wrapper right-side active">
-        <div class="header-background white"></div>
-        <div class="header-wrapper row valign-wrapper">
-          <div class="col s12 m8 offset-m2 valign">
-            <h1>Startup!</h1>
-            <span class="tagline">Show off your business in a whole new way.</span>
-            <button class="read-more"><i class="icon-caret-down"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="horizontal-half-wrapper">
-        <div class="header-background white"></div>
-        <div class="header-wrapper row valign-wrapper">
-          <div class="col s12 m8 offset-m2 valign">
-            <h1>Second!</h1>
-            <span class="tagline">Second tagline with more information.</span>
-            <button class="read-more"><i class="icon-caret-down"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="horizontal-half-wrapper right-side">
-        <div class="header-background white"></div>
-        <div class="header-wrapper row valign-wrapper">
-          <div class="col s12 m8 offset-m2 valign">
-            <h1>Third!</h1>
-            <span class="tagline">Third tagline with more information.</span>
-            <button class="read-more"><i class="icon-caret-down"></i></button>
-          </div>
-        </div>
-      </div>
+<div class="header full-height horizontal-half-transition">
+    <div class="background">
+    <img src="http://placehold.it/1440x900" alt="">
     </div>
+    <div class="phone-preview-sizer">
+    <div class="phone-preview"></div>
+    <div class="image-container active" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/SEJA_VOLUNTÁRIO.png)"></div>
+    <div class="image-container" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/DOAÇÃO_DE_ROUPAS-1.png)"></div>
+    <div class="image-container" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/CESTA_BÁSICA-300x181.png)"></div>
+    </div>
+    <div class="horizontal-half-wrapper right-side active">
+    <div class="header-background white"></div>
+    <div class="header-wrapper row valign-wrapper">
+        <div class="col s12 m8 offset-m2 valign">
+        <h1>Startup!</h1>
+        <span class="tagline">Show off your business in a whole new way.</span>
+        <button class="read-more"><i class="icon-caret-down"></i></button>
+        </div>
+    </div>
+    </div>
+    <div class="horizontal-half-wrapper">
+    <div class="header-background white"></div>
+    <div class="header-wrapper row valign-wrapper">
+        <div class="col s12 m8 offset-m2 valign">
+        <h1>Second!</h1>
+        <span class="tagline">Second tagline with more information.</span>
+        <button class="read-more"><i class="icon-caret-down"></i></button>
+        </div>
+    </div>
+    </div>
+    <div class="horizontal-half-wrapper right-side">
+        <div class="header-background white"></div>
+            <div class="header-wrapper row valign-wrapper">
+                <div class="col s12 m8 offset-m2 valign">
+                <h1>Third!</h1>
+                <span class="tagline">Third tagline with more information.</span>
+                <button class="read-more"><i class="icon-caret-down"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="section valign-wrapper">
       <div class="row valign">
