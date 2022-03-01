@@ -49,7 +49,7 @@ print_r($args);
 <?php wp_body_open(); ?>
     <nav>
 
-    <?php wp_nav_menu( array( 'items_wrap' => '%3$s' ) ); ?>
+    <?php wp_nav_menu( $args ); ?>
 
   </nav>
   <?php 
