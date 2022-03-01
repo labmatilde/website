@@ -62,7 +62,7 @@ $args_mobile = array(
     </div> <!-- nav-wrapper -->
   </nav>
 <?php 
-wp_nav_menu( array( 'items_wrap' => '%3$s' ) );
+wp_nav_menu( $args_mobile );
   
   #get_search_form();
 
