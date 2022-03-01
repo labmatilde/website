@@ -11,8 +11,8 @@
 
 
 $args = array(
-  'menu_class'        => "lam_menu_class", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
-  'menu_id'           => "lam_menu_id", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
+  'menu_class'        => "left hide-on-med-and-down", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+  'menu_id'           => "nav-mobile", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
   'container'         => "lam_container", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
   'container_class'   => "lam_container_class", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
   'container_id'      => "lam_container_id", // (string) The ID that is applied to the container.
@@ -26,10 +26,6 @@ $args = array(
   'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>', // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
   'item_spacing'      => "preserve", // (string) Whether to preserve whitespace within the menu's HTML. Accepts 'preserve' or 'discard'. Default 'preserve'.
 );
-
-print_r($args);
-
-
 ?><!DOCTYPE html>
 
 <html class="no-js" <?php language_attributes(); ?>>
@@ -46,7 +42,7 @@ print_r($args);
 
   </head>
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
+<?php #wp_body_open(); ?>
     <nav>
 
     <?php wp_nav_menu( $args ); ?>
@@ -54,7 +50,7 @@ print_r($args);
   </nav>
   <?php 
   
-  get_search_form();
+  #get_search_form();
 
 
 
