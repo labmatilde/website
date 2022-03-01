@@ -51,36 +51,37 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col s12">
-
+                <h2>Projeto sem fins lucrativos</h2>
+                <p>A transformação do mundo em um lugar melhor como objetivo principal. O trabalho, na maior parte do tempo, fica por conta dos times de voluntários, que se doam para melhorar a vida de pessoas que muitas vezes nem conhecem. Vale dizer que o maior combustível desses projetos é a vontade humana de fazer o bem</p>
             </div>
             <div class="row">
                 <div class="col s12 m4">
-                <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                <span class="card-title">Missão</span>
-                <p>Contribuir com a construção de uma sociedade justa, humana e igualitária, por meio de atividades socioeducativas que visem à melhoria da qualidade de vida e o pleno exercício da cidadania das famílias em situação de vulnerabilidade, exclusão ou risco social e pessoal.</p>
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">Speeds up development</h5>
+
+                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                    </div>
                 </div>
-                </div>
-                </div>
-                </div> <!-- col -->
+
                 <div class="col s12 m4">
-                <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                <span class="card-title">Visão</span>
-                <p>Ser referência no atendimento e valorização humana de crianças, jovens, adultos e a família em situação de extrema vulnerabilidade sócio econômica.</p>
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">User Experience Focused</h5>
+
+                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                    </div>
                 </div>
-                </div>
-                </div>
-                </div> <!-- col -->
+
                 <div class="col s12 m4">
-                <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                <span class="card-title">Princípios e Valores</span>
-                <p>Compromisso com o trabalho, com os nossos irmãos em situação de extrema vulnerabilidade, sócio e econômica. Buscamos a educação como ferramenta de aprendizado constante, a fé no cristianismo redivivo a alimentar a esperança perdida. Respeito e solidariedade é nossa transparência no dia a dia das ações envolvendo a dedicação e a simplicidade em todos os atos diários. Trabalhar pelo bem comum, para a vida e pela dignidade humana.</p>
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">Easy to work with</h5>
+
+                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                    </div>
                 </div>
-                </div>
-                </div>
-                </div> <!-- col -->
+            </div>
         </div> <!-- row -->
     </div> <!-- container -->
 </div> <!-- section -->
