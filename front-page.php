@@ -6,49 +6,10 @@
 * @subpackage lam
 * @since Lar Assistencial Matilde 1.0
 */
+ 
+get_header(); 
 ?>
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Horizontal Halves - Startup</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/startup-materialize.min.css">
-
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
-  <body>
-
-    <!-- Navbar -->
-    <nav class="navbar dark absolute">
-      <div class="nav-wrapper">
-        <a href="horizontal-half.html" class="brand-logo"><i class="icon-diamond white-text"></i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="active"><a class="dropdown-button" href="#!" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true">Pages<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="docs/about.html">Docs</a></li>
-          <li><a href="#">Buy Now!</a></li>
-        </ul>
-
-        <ul id="pages" class="dropdown-content">
-          <li><a class="active" href="horizontal-half.html">Horizontal Halves</a></li>
-          <li><a href="sierra.html">Zoom Out</a></li>
-          <li><a href="circle-reveal.html">Circle Reveal</a></li>
-          <li><a href="phone-wall.html">Phone Wall</a></li>
-          <li><a href="element-transitions.html">Element Transitions</a></li>
-          <li><a href="basic-elements.html">Basic Elements</a></li>
-          <li><a href="card-shuffle.html">Shuffle</a></li>
-          <li><a href="postcards.html">Postcards</a></li>
-        </ul>
-
-        <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
-      </div>
-    </nav>
     <ul id="slide-out" class="side-nav">
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
@@ -231,137 +192,87 @@
       </div>
     </div>
 
-    <div class="section light full-height">
-      <div class="row">
-        <div class="col s12 m10 offset-m1 center">
-          <h1>blog</h1>
-          <div class="row masonry-grid">
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-image">
-                  <a href="blog.html"><img src="http://placehold.it/600x400"></a>
-                  <span class="card-title">Something Interesting</span>
-                </div>
-              </div>
+<div class="section light full-height">
+    <div class="row">
+    <div class="col s12 m10 offset-m1 center">
+        <h1>blog</h1>
+        <div class="row masonry-grid">
+        <div class="col s12 m6 l4">
+            <div class="card">
+            <div class="card-image">
+                <a href="blog.html"><img src="http://placehold.it/600x400"></a>
+                <span class="card-title">Something Interesting</span>
             </div>
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-image">
-                  <a href="blog.html"><img src="http://placehold.it/600x400"></a>
-                  <span class="card-title">Another Blog Post</span>
-                </div>
-              </div>
             </div>
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-image">
-                  <a href="blog.html"><img src="http://placehold.it/600x400"></a>
-                  <span class="card-title">Click Bait Article</span>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-image">
-                  <a href="blog.html"><img src="http://placehold.it/600x400"></a>
-                  <span class="card-title">Don't Read This!</span>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-image">
-                  <a href="blog.html"><img src="http://placehold.it/600x400"></a>
-                  <span class="card-title">Why Are You Still Reading?</span>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-image">
-                  <a href="blog.html"><img src="http://placehold.it/600x400"></a>
-                  <span class="card-title">Good Bye</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="col s12 m6 l4">
+            <div class="card">
+            <div class="card-image">
+                <a href="blog.html"><img src="http://placehold.it/600x400"></a>
+                <span class="card-title">Another Blog Post</span>
+            </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="card">
+            <div class="card-image">
+                <a href="blog.html"><img src="http://placehold.it/600x400"></a>
+                <span class="card-title">Click Bait Article</span>
+            </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="card">
+            <div class="card-image">
+                <a href="blog.html"><img src="http://placehold.it/600x400"></a>
+                <span class="card-title">Don't Read This!</span>
+            </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="card">
+            <div class="card-image">
+                <a href="blog.html"><img src="http://placehold.it/600x400"></a>
+                <span class="card-title">Why Are You Still Reading?</span>
+            </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="card">
+            <div class="card-image">
+                <a href="blog.html"><img src="http://placehold.it/600x400"></a>
+                <span class="card-title">Good Bye</span>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
-
-    <!-- Contact Us -->
-    <div class="section light valign-wrapper">
-      <div class="container">
-        <form>
-          <div class="row">
-            <div class="col s12"><h2 class="section-title">Contact Us</h2></div>
-            <div class="input-field col s6">
-              <input id="first_name" type="text">
-              <label for="first_name">First Name</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text">
-              <label for="last_name">Last Name</label>
-            </div>
-            <div class="input-field col s12">
-              <textarea id="message" class="materialize-textarea"></textarea>
-              <label for="message">Message</label>
-              <a class="waves-effect waves-light btn-large">Button</a>
-            </div>
-          </div>
-        </form>
-      </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="page-footer">
-      <div class="container">
+<!-- Contact Us -->
+<div class="section light valign-wrapper">
+    <div class="container">
+    <form>
         <div class="row">
-          <div class="col s6 m3">
-            <img class="materialize-logo" src="images/materialize-teal.png" alt="">
-            <p>Made with love by Materialize.</p>
-          </div>
-          <div class="col s6 m3">
-            <h5>About</h5>
-            <ul>
-              <li><a href="#!">Blog</a></li>
-              <li><a href="#!">Pricing</a></li>
-              <li><a href="#!">Docs</a></li>
-            </ul>
-          </div>
-          <div class="col s6 m3">
-            <h5>Connect</h5>
-            <ul>
-              <li><a href="#!">Community</a></li>
-              <li><a href="#!">Subscribe</a></li>
-              <li><a href="#!">Email</a></li>
-            </ul>
-          </div>
-          <div class="col s6 m3">
-            <h5>Contact</h5>
-            <ul>
-              <li><a href="#!">Twitter</a></li>
-              <li><a href="#!">Facebook</a></li>
-              <li><a href="#!">Github</a></li>
-            </ul>
-          </div>
+        <div class="col s12"><h2 class="section-title">Contact Us</h2></div>
+        <div class="input-field col s6">
+            <input id="first_name" type="text">
+            <label for="first_name">First Name</label>
         </div>
-      </div>
-    </footer>
+        <div class="input-field col s6">
+            <input id="last_name" type="text">
+            <label for="last_name">Last Name</label>
+        </div>
+        <div class="input-field col s12">
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">Message</label>
+            <a class="waves-effect waves-light btn-large">Button</a>
+        </div>
+        </div>
+    </form>
+    </div>
+</div>
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-
-    <!-- External libraries -->
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/ScrollMagic.min.js"></script>
-    <script src="js/animation.gsap.min.js"></script>
-
-    <!-- Initialization script -->
-    <script src="js/startup.js"></script>
-    <script src="js/init.js"></script>
-  </body>
-</html>
+<?php 
+get_footer();

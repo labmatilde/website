@@ -37,6 +37,9 @@ $args_mobile = array(
 <html class="no-js" <?php language_attributes(); ?>>
 
   <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Horizontal Halves - Startup</title>
+    <meta name="description" content="">
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <!--Let browser know website is optimized for mobile-->
@@ -50,36 +53,32 @@ $args_mobile = array(
 <?php #wp_body_open(); ?>
 <body <?php body_class(); ?>>
 
-<nav class="top-menu blue lighten-5 hide-on-med-and-down">
-<div class="container">
-<div class="col s12">
-<div class="nav-wrapper">
-<a href="<?php home_url(); ?>" class="brand-logo">
-<?php if ( function_exists( 'the_custom_logo' ) ) {
-  the_custom_logo();
-} ?></a>
-<ul class="right">
-  <li><a href="sass.html"><i class=" Medium material-icons">refresh</i></a></li>
-  <li><a href="badges.html"><i class="Medium material-icons">refresh</i></a></li>
-  <li><a href="collapsible.html"><i class="Medium material-icons">refresh</i></a></li>
-</ul>
-</div> <!-- nav-wrapper -->
-</div>
-</div>
-</nav>
+<!-- Navbar -->
+<nav class="navbar dark absolute">
+  <div class="nav-wrapper">
+    <a href="horizontal-half.html" class="brand-logo"><i class="icon-diamond white-text"></i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li class="active"><a class="dropdown-button" href="#!" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true">Pages<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="docs/about.html">Docs</a></li>
+      <li><a href="#">Buy Now!</a></li>
+    </ul>
 
-<nav class="nav-menu blue darken-1">
-<div class="container">
-<div class="col s12">
-<div class="nav-wrapper">
-<a href="<?php home_url(); ?>" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-<?php wp_nav_menu( $args ); ?>
-</div> <!-- nav-wrapper -->
-</div>
-</div>
+    <ul id="pages" class="dropdown-content">
+      <li><a class="active" href="horizontal-half.html">Horizontal Halves</a></li>
+      <li><a href="sierra.html">Zoom Out</a></li>
+      <li><a href="circle-reveal.html">Circle Reveal</a></li>
+      <li><a href="phone-wall.html">Phone Wall</a></li>
+      <li><a href="element-transitions.html">Element Transitions</a></li>
+      <li><a href="basic-elements.html">Basic Elements</a></li>
+      <li><a href="card-shuffle.html">Shuffle</a></li>
+      <li><a href="postcards.html">Postcards</a></li>
+    </ul>
+
+    <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
+  </div>
 </nav>
-<?php 
-wp_nav_menu( $args_mobile );
   
   #get_search_form();
 
