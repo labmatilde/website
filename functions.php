@@ -34,13 +34,13 @@ function lam_register_scripts() {
 	}
 
     wp_enqueue_script( 'lam-js', get_template_directory_uri() . '/assets/js/materialize.min.js', array(), $theme_version, true );
-    wp_enqueue_script( 'lam-images', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd.min.js', array(), $theme_version, true );
-    wp_enqueue_script( 'lam-masonry', get_template_directory_uri() . '/assets/js/masonry.pkgd.min.js', array(), $theme_version, true );
-    wp_enqueue_script( 'lam-tween', get_template_directory_uri() . '/assets/js/TweenMax.min.js', array(), $theme_version, true );
-    wp_enqueue_script( 'lam-scroll', get_template_directory_uri() . '/assets/js/ScrollMagic.min.js', array(), $theme_version, true );
-    wp_enqueue_script( 'lam-anima', get_template_directory_uri() . '/assets/js/animation.gsap.min.js', array(), $theme_version, true );
-    wp_enqueue_script( 'lam-start', get_template_directory_uri() . '/assets/js/startup.js', array(), $theme_version, true );
-    wp_enqueue_script( 'lam-init', get_template_directory_uri() . '/assets/js/init.js', array(), $theme_version, true );
+    wp_enqueue_script( 'lam-images', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd.min.js', array(), true );
+    wp_enqueue_script( 'lam-masonry', get_template_directory_uri() . '/assets/js/masonry.pkgd.min.js', array(), true );
+    wp_enqueue_script( 'lam-tween', get_template_directory_uri() . '/assets/js/TweenMax.min.js', array(), true );
+    wp_enqueue_script( 'lam-scroll', get_template_directory_uri() . '/assets/js/ScrollMagic.min.js', array(), true );
+    wp_enqueue_script( 'lam-anima', get_template_directory_uri() . '/assets/js/animation.gsap.min.js', array(), true );
+    wp_enqueue_script( 'lam-start', get_template_directory_uri() . '/assets/js/startup.js', array(), true );
+    wp_enqueue_script( 'lam-init', get_template_directory_uri() . '/assets/js/init.js', array(), true );
 
 }
 add_action( 'wp_enqueue_scripts', 'lam_register_scripts' );
