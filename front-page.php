@@ -1,13 +1,11 @@
 <?php
 /**
-* Template Name: Index
+* Template Name: Front Page
 *
 * @package Labmatilde
 * @subpackage lam
 * @since Lar Assistencial Matilde 1.0
 */
-
-echo('front page');
 get_header();
 
 get_sidebar();
