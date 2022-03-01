@@ -11644,7 +11644,7 @@ nav.navbar ul a:hover {
 .header .header-wrapper h1 {
   margin: 1rem 0;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
@@ -12162,6 +12162,10 @@ textarea.materialize-textarea + label {
     height: 100%;
   }
   .header .header-wrapper h1 {
-    font-size: 4rem;
+    font-size: 2rem;
+  }
+  .horizontal-half-transition[data-disabled="true"] .horizontal-half-wrapper,
+  .horizontal-half-transition[data-disabled="true"] .horizontal-half-wrapper.right-side {
+    min-height: 50vh;
   }
 }
