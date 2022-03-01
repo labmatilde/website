@@ -51,39 +51,34 @@ get_header();
     </div>
 </div>
 
-    <div class="section valign-wrapper">
-      <div class="row valign">
+<div class="section valign-wrapper">
+    <div class="row valign">
         <div class="col s12 m10 offset-m1">
-          <div class="row">
-            <div class="col s12"><h2 class="section-title">Features</h2></div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-light-bulb"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="section-title">Projeto sem fins lucrativos</h2>
+                </div>
+                <div class="col s12 m12 l12">
+                    <p class="caption">A transformação do mundo em um lugar melhor como objetivo principal. O trabalho, na maior parte do tempo, fica por conta dos times de voluntários, que se doam para melhorar a vida de pessoas que muitas vezes nem conhecem. Vale dizer que o maior combustível desses projetos é a vontade humana de fazer o bem.</p>
+                </div>
             </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-bolt"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <h4><i class="icon-light-bulb"></i>Missão</h4>
+                    <p class="caption">Contribuir com a construção de uma sociedade justa, humana e igualitária, por meio de atividades socioeducativas que visem à melhoria da qualidade de vida e o pleno exercício da cidadania das famílias em situação de vulnerabilidade, exclusão ou risco social e pessoal.</p>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h4><i class="icon-bolt"></i>Visão</h4>
+                    <p class="caption">Ser referência no atendimento e valorização humana de crianças, jovens, adultos e a família em situação de extrema vulnerabilidade sócio econômica.</p>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h4><i class="icon-rocket"></i>Princípios e Valores</h4>
+                    <p class="caption">Compromisso com o trabalho, com os nossos irmãos em situação de extrema vulnerabilidade, sócio e econômica. Buscamos a educação como ferramenta de aprendizado constante, a fé no cristianismo redivivo a alimentar a esperança perdida. Respeito e solidariedade é nossa transparência no dia a dia das ações envolvendo a dedicação e a simplicidade em todos os atos diários. Trabalhar pelo bem comum, para a vida e pela dignidade humana.</p>
+                </div>
             </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-rocket"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-settings"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-umbrella"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-compass"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
 
     <!-- Pricing Tables -->
