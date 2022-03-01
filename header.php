@@ -22,10 +22,10 @@ $args = array(
 );
 
 $args_mobile = array(
-  'menu_class'        => "", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
-  'menu_id'           => "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
+  'menu_class'        => "lam-mobile", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+  'menu_id'           => "menu-mobile", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
   'echo'              => "true", // (bool) Whether to echo the menu or return it. Default true.
-  'container'         => "ul", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
+  'container'         => "div", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
   'container_class'   => "sidenav", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
   'container_id'      => "mobile-lam", // (string) The ID that is applied to the container.
   'depth'             => "0", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
