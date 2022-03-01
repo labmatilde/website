@@ -45,6 +45,46 @@ get_header(); ?>
     </div> <!-- row -->
 </div> <!-- container -->
 
+<!-- MISSÃO, VISÃO E VALORES -->
+
+<div class="section teal lighten-2">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+
+            </div>
+            <div class="row">
+                <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                <span class="card-title">Missão</span>
+                <p>Contribuir com a construção de uma sociedade justa, humana e igualitária, por meio de atividades socioeducativas que visem à melhoria da qualidade de vida e o pleno exercício da cidadania das famílias em situação de vulnerabilidade, exclusão ou risco social e pessoal.</p>
+                </div>
+                </div>
+                </div>
+                </div> <!-- col -->
+                <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                <span class="card-title">Visão</span>
+                <p>Ser referência no atendimento e valorização humana de crianças, jovens, adultos e a família em situação de extrema vulnerabilidade sócio econômica.</p>
+                </div>
+                </div>
+                </div>
+                </div> <!-- col -->
+                <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                <span class="card-title">Princípios e Valores</span>
+                <p>Compromisso com o trabalho, com os nossos irmãos em situação de extrema vulnerabilidade, sócio e econômica. Buscamos a educação como ferramenta de aprendizado constante, a fé no cristianismo redivivo a alimentar a esperança perdida. Respeito e solidariedade é nossa transparência no dia a dia das ações envolvendo a dedicação e a simplicidade em todos os atos diários. Trabalhar pelo bem comum, para a vida e pela dignidade humana.</p>
+                </div>
+                </div>
+                </div>
+                </div> <!-- col -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div> <!-- section -->
+
 
 <?php
 get_footer();
