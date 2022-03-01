@@ -1,19 +1,4 @@
 <?php
-
-add_theme_support( 'automatic-feed-links' );
-add_theme_support( 'title-tag' );
-add_theme_support( 'custom-logo', array(
-    'height' => 480,
-    'width'  => 720,
-) );
-
-	
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
-add_theme_support( 'responsive-embeds' );
-add_theme_support( 'editor-styles' );
-add_theme_support( 'html5', array('style','script', ) );
-
 /**
  * Register and Enqueue Styles.
  *
@@ -53,13 +38,47 @@ function lam_register_scripts() {
 add_action( 'wp_enqueue_scripts', 'lam_register_scripts' );
 
 
-if ( ! function_exists( 'theme_register_nav_menu' ) ) {
+/**
+ * 
+ * 
+ */
+if ( ! function_exists( 'lam_register_nav_menu' ) ) {
  
-    function theme_register_nav_menu(){
+    function lam_register_nav_menu(){
         register_nav_menus( array(
             'primary_menu' => __( 'Primary Menu' ),
             'footer_menu'  => __( 'Footer Menu' ),
         ) );
     }
-    add_action( 'after_setup_theme', 'theme_register_nav_menu', 0 );
+    add_action( 'after_setup_theme', 'lam_register_nav_menu', 0 );
 }
+
+/***
+ * 
+ * 
+ */
+
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo', array(
+    'height' => 480,
+    'width'  => 720,
+) );
+
+	
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+add_theme_support( 'responsive-embeds' );
+add_theme_support( 'editor-styles' );
+add_theme_support( 'html5', array('style','script', ) );
+
+/**
+ * Proper ob_end_flush() for all levels
+ *
+ * This replaces the WordPress `wp_ob_end_flush_all()` function
+ * with a replacement that doesn't cause PHP notices.
+ */
+remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
+add_action( 'shutdown', function() {
+    while ( @ob_end_flush() );
+});
