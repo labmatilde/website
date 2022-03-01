@@ -51,7 +51,7 @@ get_header();
     </div>
 </div>
 
-    <div class="section valign-wrapper">
+    <div class="section white valign-wrapper">
       <div class="row valign">
         <div class="col s12 m10 offset-m1">
           <div class="row">
