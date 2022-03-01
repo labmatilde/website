@@ -39,7 +39,8 @@ $args = array(
 
   <nav>
     <div class="nav-wrapper">
-    <?php wp_nav_menu( $args ); ?>
+      <a href="#" class="brand-logo right">Logo</a>
+      <?php wp_nav_menu( $args ); ?>
     </div>
   </nav>
   <?php 
