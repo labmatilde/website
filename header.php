@@ -47,7 +47,7 @@ $args_mobile = array(
     <?php wp_head(); ?>
 
   </head>
-<?php wp_body_open(); ?>
+<?php #wp_body_open(); ?>
 <body <?php body_class(); ?>>
   <nav>
     <div class="nav-wrapper">
