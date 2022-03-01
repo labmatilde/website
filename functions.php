@@ -31,7 +31,7 @@ function lam_register_scripts() {
 	if ( ( ! is_admin() ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
+    print_r('passei pelo js')
 	wp_enqueue_script( 'lam-js', get_template_directory_uri() . '/assets/js/materialize.min.js', array(), $theme_version, true );
     wp_enqueue_script( 'lam-event', get_template_directory_uri() . '/assets/js/events.js', array('lam-js'), $theme_version, true );
 
