@@ -31,10 +31,10 @@ function lam_register_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_script( 'lam-js', get_template_directory_uri() . '/assets/js/materialize.min.js', array(), $theme_version, false );
+	wp_enqueue_script( 'lam-js', get_template_directory_uri() . '/assets/js/materialize.min.js', array(), $theme_version, true );
     wp_script_add_data( 'lam-js', 'async', true );
 
-    wp_enqueue_script( 'lam-event', get_template_directory_uri() . '/assets/js/events.js', array(), $theme_version, false );
+    wp_enqueue_script( 'lam-event', get_template_directory_uri() . '/assets/js/events.js', array(), $theme_version, true );
 	wp_script_add_data( 'lam-event', 'async', true );
 
 }
