@@ -70,7 +70,7 @@ $args_mobile = array(
 
   <nav class="blue darken-1">
     <div class="nav-wrapper">
-      <a href="<?php home_url(); ?>" class="brand-logo">
+      <a href="<?php home_url(); ?>" class="brand-logo hide-on-med-and-up">
       <?php if ( function_exists( 'the_custom_logo' ) ) {
         the_custom_logo();
       } ?></a>
