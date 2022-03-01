@@ -51,7 +51,10 @@ $args_mobile = array(
 <body <?php body_class(); ?>>
 
 <nav class="nav-extended">
-<div class="nav-wrapper">
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+    <div class="nav-wrapper">
 <a href="<?php home_url(); ?>" class="brand-logo">
 <?php if ( function_exists( 'the_custom_logo' ) ) {
   the_custom_logo();
@@ -66,6 +69,9 @@ $args_mobile = array(
 </div>
 <div class="nav-content">
 <?php wp_nav_menu( $args ); ?>
+</div>
+    </div>
+  </div>
 </div>
 </nav>
 
