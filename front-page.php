@@ -6,8 +6,11 @@
 * @subpackage lam
 * @since Lar Assistencial Matilde 1.0
 */
-get_header();
+get_header(); ?>
 
-get_sidebar();
 
+
+
+
+<?php
 get_footer();

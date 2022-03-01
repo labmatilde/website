@@ -14,6 +14,8 @@ $args = array(
   'menu_class'        => "right hide-on-med-and-down", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
   'menu_id'           => "nav-mobile", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
   'echo'              => "true", // (bool) Whether to echo the menu or return it. Default true.
+  'container'         => "div", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
+  'container_class'   => "container", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
   'depth'             => "0", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
   'theme_location'    => "primary_menu", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
   'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>', // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
@@ -48,13 +50,17 @@ $args_mobile = array(
 <body <?php body_class(); ?>>
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <?php wp_nav_menu( $args ); ?>
-    </div>
+      <div class="container">
+        <div class="row">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <?php wp_nav_menu( $args ); ?>
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </div> <!-- nav-wrapper -->
   </nav>
 <?php 
-  wp_nav_menu( $args_mobile );
+wp_nav_menu( $args_mobile );
   
   #get_search_form();
 
