@@ -8,7 +8,8 @@
 */
 get_header(); ?>
 
-
+<!-- SLIDE -->
+<div class="row">
 <div class="carousel carousel-slider center">
 <div class="carousel-fixed-item center">
 <a class="btn waves-effect white grey-text darken-text-2">button</a>
@@ -30,8 +31,19 @@ get_header(); ?>
 <p class="white-text">This is your fourth panel</p>
 </div>
 </div>
+</div>
 
+<!-- SOCIAL INSTAGRAM -->
 
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+        <a class="waves-effect waves-light btn-large">Button</a>
+        <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
+        <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
+        </div>
+    </div>
+</div>
 
 
 <?php
