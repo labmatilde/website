@@ -69,10 +69,14 @@ $args_mobile = array(
 </nav>
 
   <nav class="blue darken-1">
+  <div class="container">
+    <div class="col s12">
     <div class="nav-wrapper">
       <a href="<?php home_url(); ?>" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <?php wp_nav_menu( $args ); ?>
     </div> <!-- nav-wrapper -->
+    </div>
+  </div>
   </nav>
 <?php 
 wp_nav_menu( $args_mobile );
