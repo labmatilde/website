@@ -9322,7 +9322,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .phone-triplet .phone-preview-sizer:nth-child(1) {
   position: relative;
-  max-width: 300px;
+  /*max-width: 300px;*/
   z-index: 2;
 }
 
