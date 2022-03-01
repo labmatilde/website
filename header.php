@@ -52,7 +52,7 @@ $args = array(
 <?php wp_body_open(); ?>
     <nav>
 
-    <?php wp_nav_menu( array $args ); ?>
+    <?php wp_nav_menu( $args ); ?>
 
   </nav>
   <?php get_search_form();
