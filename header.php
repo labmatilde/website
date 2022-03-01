@@ -50,8 +50,8 @@ $args_mobile = array(
 <?php #wp_body_open(); ?>
 <body <?php body_class(); ?>>
 
-<nav class="blue lighten-5">
-  <div class="top-menu container">
+
+  <div class="top-menu container blue lighten-5">
     <div class="row">
       <div class="col s12">
         <div class="nav-wrapper">
@@ -69,7 +69,7 @@ $args_mobile = array(
       </div> <!-- row -->
     </div> <!-- container -->
   </div> <!-- nav-wrapper -->
-</nav>
+
 
   <nav class="blue darken-1">
     <div class="nav-wrapper">
