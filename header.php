@@ -46,15 +46,6 @@ $args_mobile = array(
   </head>
 <?php wp_body_open(); ?>
 <body <?php body_class(); ?>>
-
-  <nav>
-    <div class="nav-wrapper">
-      <div class="container"></div>
-      <a href="#" class="brand-logo left">Logo</a>
-      <?php wp_nav_menu( $args ); ?>
-    </div>
-  </nav>
-
   <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Logo</a>
@@ -62,9 +53,7 @@ $args_mobile = array(
       <?php wp_nav_menu( $args ); ?>
     </div>
   </nav>
-
-  <?php 
-  
+<?php 
   wp_nav_menu( $args_mobile );
   
   #get_search_form();
