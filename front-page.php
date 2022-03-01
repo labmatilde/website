@@ -38,12 +38,12 @@ get_header(); ?>
 <div class="container">
     <div class="row">
         <div class="col s12">
-        <a class="waves-effect waves-light btn-large">Button</a>
-        <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
-        <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
-        </div>
-    </div>
-</div>
+            <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>Faça uma doação</a>
+            <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>Apadrinhe o Lam</a>
+            <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>Compre uma cesta Básica</a>
+        </div> <!-- col -->
+    </div> <!-- row -->
+</div> <!-- container -->
 
 
 <?php
