@@ -51,121 +51,101 @@ get_header();
     </div>
 </div>
 
-    <div class="section white valign-wrapper">
-      <div class="row valign">
+<div class="section white valign-wrapper">
+    <div class="row valign">
         <div class="col s12 m10 offset-m1">
-          <div class="row">
-            <div class="col s12">
-                <h2 class="section-title">Projeto sem fins lucrativos</h2>
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="section-title">Projeto sem fins lucrativos</h2>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h4><i class="icon-light-bulb"></i></h4>
+                    <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h4><i class="icon-bolt"></i></h4>
+                    <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h4><i class="icon-rocket"></i></h4>
+                    <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h4><i class="icon-settings"></i></h4>
+                    <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h4><i class="icon-umbrella"></i></h4>
+                    <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h4><i class="icon-compass"></i></h4>
+                    <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+                </div>
             </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-light-bulb"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-bolt"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-rocket"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-settings"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-umbrella"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-            <div class="col s12 m6 l4">
-              <h4><i class="icon-compass"></i></h4>
-              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
 
-    <!-- Pricing Tables -->
-    <div class="section valign-wrapper">
-      <div class="row valign">
+<!-- Pricing Tables -->
+<div class="section valign-wrapper">
+    <div class="row valign">
         <div class="col s12 m10 offset-m1">
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="pricing-table">
-                <div class="pricing-header">
-                  <i class="icon-paper-plane"></i>
-                  <h4>Basic</h4>
-                  <div class="price">
-                    <span class="currency">$</span>
-                    <span class="dollars">9</span>
-                    <span class="cents">99</span>
-                  </div>
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="section-title">Ajuste o LAM</h2>
                 </div>
-                <ul class="pricing-features">
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature disabled"><i class="icon-close"></i>Pro and above.</li>
-                  <li class="pricing-feature disabled"><i class="icon-close"></i>Enterprise only.</li>
-                  <li class="pricing-feature disabled"><i class="icon-close"></i>Enterprise only.</li>
-                  <li class="pricing-feature disabled"><i class="icon-close"></i>Enterprise only.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col s12 m4">
-              <div class="pricing-table featured">
-                <div class="pricing-header">
-                  <i class="icon-plane"></i>
-                  <h4>Pro</h4>
-                  <div class="price">
-                    <span class="currency">$</span>
-                    <span class="dollars">59</span>
-                    <span class="cents">99</span>
-                  </div>
+                
+                <div class="col s12 m4">
+                    <div class="pricing-table">
+                        <div class="pricing-header">
+                        <i class="icon-paper-plane"></i>
+                        <h4>Basic</h4>
+                            <div class="price">
+                                <span class="currency">R$</span>
+                                <span class="dollars">10</span>
+                                <span class="cents">00</span>
+                            </div>
+                        </div>
+                        <a class="waves-effect waves-light btn">button</a>
+                    </div>
                 </div>
-                <ul class="pricing-features">
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>Pro and above.</li>
-                  <li class="pricing-feature disabled"><i class="icon-close"></i>Enterprise only.</li>
-                  <li class="pricing-feature disabled"><i class="icon-close"></i>Enterprise only.</li>
-                  <li class="pricing-feature disabled"><i class="icon-close"></i>Enterprise only.</li>
-                </ul>
-              </div>
-            </div>
 
-            <div class="col s12 m4">
-              <div class="pricing-table">
-                <div class="pricing-header">
-                  <i class="icon-rocket"></i>
-                  <h4>Enterprise</h4>
-                  <div class="price">
-                    <span class="currency">$</span>
-                    <span class="dollars">299</span>
-                    <span class="cents">99</span>
-                  </div>
+                <div class="col s12 m4">
+                    <div class="pricing-table">
+                        <div class="pricing-header">
+                        <i class="icon-paper-plane"></i>
+                        <h4>Basic</h4>
+                            <div class="price">
+                                <span class="currency">R$</span>
+                                <span class="dollars">20</span>
+                                <span class="cents">00</span>
+                            </div>
+                        </div>
+                        <a class="waves-effect waves-light btn">button</a>
+                    </div>
                 </div>
-                <ul class="pricing-features">
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>10 product uses.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>Enterprise only.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>Enterprise only.</li>
-                  <li class="pricing-feature"><i class="icon-accept"></i>Enterprise only.</li>
-                </ul>
-              </div>
-            </div>
 
-          </div>
+                <div class="col s12 m4">
+                    <div class="pricing-table">
+                        <div class="pricing-header">
+                        <i class="icon-paper-plane"></i>
+                        <h4>Basic</h4>
+                            <div class="price">
+                                <span class="currency">R$</span>
+                                <span class="dollars">40</span>
+                                <span class="cents">00</span>
+                            </div>
+                        </div>
+                        <a class="waves-effect waves-light btn">button</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
     </div>
+</div>
 
 <div class="section light full-height">
     <div class="row">
