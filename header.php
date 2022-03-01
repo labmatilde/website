@@ -15,7 +15,6 @@ $args = array(
   'menu_id'           => "nav-mobile", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
   'echo'              => "true", // (bool) Whether to echo the menu or return it. Default true.
   'container'         => "div", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
-  'container_class'   => "container", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
   'depth'             => "0", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
   'theme_location'    => "primary_menu", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
   'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>', // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
