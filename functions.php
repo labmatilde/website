@@ -37,7 +37,7 @@ function lam_register_scripts() {
 	wp_script_add_data( 'lam-js', 'async', true );
 
 	#wp_enqueue_script( 'lam-js', get_template_directory_uri() . '/assets/js/materialize.min.js', array(), true );
-    #wp_enqueue_script( 'lam-event', get_template_directory_uri() . '/assets/js/events.js', array('lam-js'), true );
+    wp_enqueue_script( 'lam-event', get_template_directory_uri() . '/assets/js/events.js', array('lam-js'), true );
 
 }
 add_action( 'wp_enqueue_scripts', 'lam_register_scripts' );
