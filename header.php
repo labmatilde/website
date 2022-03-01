@@ -30,7 +30,7 @@ $args = array(
   'item_spacing'      => "preserve", // (string) Whether to preserve whitespace within the menu's HTML. Accepts 'preserve' or 'discard'. Default 'preserve'.
 )
 
-print_r($args);
+#print_r($args);
 
 
 ?><!DOCTYPE html>
