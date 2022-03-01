@@ -51,6 +51,7 @@ if ( ! function_exists( 'lam_register_nav_menu' ) ) {
         ) );
     }
     add_action( 'after_setup_theme', 'lam_register_nav_menu', 0 );
+    
 }
 
 /***
