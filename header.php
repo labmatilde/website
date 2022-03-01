@@ -51,7 +51,7 @@ $args_mobile = array(
 <body <?php body_class(); ?>>
 
 <nav class="blue lighten-5">
-  <div class="container">
+  <div class="top-menu container">
     <div class="row">
       <div class="col s12">
         <div class="nav-wrapper">

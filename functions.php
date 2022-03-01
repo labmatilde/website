@@ -14,6 +14,7 @@ function lam_register_styles() {
 	// Add print CSS.
 	wp_enqueue_style( 'lam-material', get_template_directory_uri() . '/assets/css/materialize.min.css', null, $theme_version, 'screen, projection' );
     wp_enqueue_style( 'lam-icon', get_template_directory_uri() . '/assets/css/icon.css', null, $theme_version, 'all' );
+    wp_enqueue_style( 'lam-icon', get_template_directory_uri() . '/assets/css/lam.css', null, $theme_version, 'all' );
 
 }
 add_action( 'wp_enqueue_scripts', 'lam_register_styles' );
