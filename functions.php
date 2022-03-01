@@ -25,6 +25,7 @@ add_action( 'wp_enqueue_scripts', 'lam_register_styles' );
  *
  * @since Lar Assistencial Matilde 1.0
  */
+/*
 function lam_register_scripts() {
 
 	$theme_version = wp_get_theme()->get( 'Version' );
@@ -44,7 +45,7 @@ function lam_register_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'lam_register_scripts' );
-
+*/
 
 /**
  * 
