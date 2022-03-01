@@ -25,7 +25,7 @@ $args = array(
   'echo'              => "", // (bool) Whether to echo the menu or return it. Default true.
   'depth'             => "0", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
   'walker'            => "", // (object) Instance of a custom walker class.
-  'theme_location'    => "primary_menu", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
+  'theme_location'    => "Primary Menu", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
   'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>', // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
   'item_spacing'      => "preserve", // (string) Whether to preserve whitespace within the menu's HTML. Accepts 'preserve' or 'discard'. Default 'preserve'.
 )
@@ -52,7 +52,7 @@ $args = array(
 <?php wp_body_open(); ?>
     <nav>
 
-    <?php wp_nav_menu( $args ); ?>
+    <?php wp_nav_menu( array $args ); ?>
 
   </nav>
   <?php get_search_form();
