@@ -26,13 +26,14 @@ add_action( 'wp_enqueue_scripts', 'lam_register_styles' );
 function lam_register_scripts() {
 
 	$theme_version = wp_get_theme()->get( 'Version' );
+    if ( !is_admin() ) wp_deregister_script('jquery');
 
 	if ( ( ! is_admin() ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	wp_enqueue_script( 'lam-js', get_template_directory_uri() . '/assets/js/materialize.min.js', array(), $theme_version, true );
-    wp_enqueue_script( 'lam-event', get_template_directory_uri() . '/assets/js/events.js', array(), $theme_version, true );
+    wp_enqueue_script( 'lam-event', get_template_directory_uri() . '/assets/js/events.js', array('lam-js'), $theme_version, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'lam_register_scripts' );
