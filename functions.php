@@ -47,11 +47,12 @@ if ( ! function_exists( 'lam_register_nav_menu' ) ) {
     function lam_register_nav_menu(){
         register_nav_menus( array(
             'primary_menu' => __( 'Primary Menu' ),
+            'mobile_menu' => __( 'Mobile Menu' ),
             'footer_menu'  => __( 'Footer Menu' ),
         ) );
     }
     add_action( 'after_setup_theme', 'lam_register_nav_menu', 0 );
-    
+
 }
 
 /***
