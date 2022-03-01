@@ -49,15 +49,31 @@ $args_mobile = array(
   </head>
 <?php #wp_body_open(); ?>
 <body <?php body_class(); ?>>
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+  </div>
+</nav>
+
   <nav>
     <div class="nav-wrapper">
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <a href="#!" class="brand-logo">Logo</a>
-            <a href="#" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="<?php home_url(); ?>" class="brand-logo">
+            <?php if ( function_exists( 'the_custom_logo' ) ) {
+              the_custom_logo();
+            } ?>
+            </a>
+            <a href="<?php home_url(); ?>" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <?php wp_nav_menu( $args ); ?>
-'         </div> <!-- col -->
+          </div> <!-- col -->
         </div> <!-- row -->
       </div> <!-- container -->
     </div> <!-- nav-wrapper -->
