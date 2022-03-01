@@ -50,34 +50,41 @@ $args_mobile = array(
 <?php #wp_body_open(); ?>
 <body <?php body_class(); ?>>
 
-<nav class="nav-extended">
-<div class="container">
-<div class="row">
-<div class="col s12">
-<div class="nav-wrapper blue lighten-5">
-<a href="<?php home_url(); ?>" class="brand-logo">
-<?php if ( function_exists( 'the_custom_logo' ) ) {
-the_custom_logo();
-} ?></a>
-<a href="#" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-<ul class="right hide-on-med-and-down">
-<li><a href="sass.html"><i class="material-icons">search</i></a></li>
-<li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-<li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-<li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-</ul> <!-- hide-on-med-and-down -->
-</div> <!-- nav-wrapper -->
-<div class="nav-content blue darken-1">
-<?php wp_nav_menu( $args ); ?>
-</div> <!-- nav-content -->
-</div> <!-- col -->
-</div> <!-- row -->
-</div> <!-- container -->
-</nav> <!-- nav-extended -->
+<nav class="blue lighten-5">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="nav-wrapper">
+          <a href="<?php home_url(); ?>" class="brand-logo">
+          <?php if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+          } ?>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class=" Medium material-icons">refresh</i></a></li>
+            <li><a href="badges.html"><i class="Medium material-icons">refresh</i></a></li>
+            <li><a href="collapsible.html"><i class="Medium material-icons">refresh</i></a></li>
+          </ul>
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </div> <!-- nav-wrapper -->
+</nav>
 
+  <nav class="blue darken-1">
+    <div class="nav-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <a href="<?php home_url(); ?>" data-target="mobile-lam" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <?php wp_nav_menu( $args ); ?>
+          </div> <!-- col -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </div> <!-- nav-wrapper -->
+  </nav>
 <?php 
 wp_nav_menu( $args_mobile );
-
   
   #get_search_form();
 
