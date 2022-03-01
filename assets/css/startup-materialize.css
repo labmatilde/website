@@ -11322,7 +11322,7 @@ body, html {
 
 body {
   background-color: #67a6a2;
-  color: #eee;
+  color: #000;
 }
 
 body.light-theme {
@@ -11772,7 +11772,7 @@ nav.navbar ul a:hover {
   padding: 64px 0;
   height: 100%;
   overflow: hidden;
-  background-color: #000;
+  background-color: #fff;
   z-index: 3;
 }
 
