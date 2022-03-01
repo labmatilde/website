@@ -17,7 +17,7 @@ get_header();
     <div class="phone-preview-sizer">
     <div class="image-container active" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/SEJA_VOLUNTÁRIO.png)"></div>
     <div class="image-container" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/DOAÇÃO_DE_ROUPAS-1.png)"></div>
-    <div class="image-container" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/CESTA_BÁSICA-300x181.png)"></div>
+    <div class="image-container" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/CESTA_BÁSICA.png)"></div>
     </div>
     <div class="horizontal-half-wrapper right-side active">
     <div class="header-background white"></div>
