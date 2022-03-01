@@ -9262,7 +9262,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .phone-preview-sizer.pinned:before, .phone-preview-sizer:before {
   content: '';
   display: block;
-  padding-bottom: 200%;
+  padding-bottom: 70%;
 }
 
 .phone-preview-sizer.iphone {
@@ -11322,7 +11322,7 @@ body, html {
 }
 
 body {
-  background-color: #000;
+  background-color: #67a6a2;
   color: #eee;
 }
 

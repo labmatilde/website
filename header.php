@@ -51,7 +51,7 @@ $args_mobile = array(
 
   </head>
 <?php #wp_body_open(); ?>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="background-color:#67a6a2;">
 
 <!-- Navbar -->
 <nav class="navbar dark absolute">

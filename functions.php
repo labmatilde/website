@@ -12,7 +12,7 @@ function lam_register_styles() {
 	wp_style_add_data( 'lam-style', 'rtl', 'replace' );
 
 	// Add print CSS.
-    wp_enqueue_style( 'lam-material', get_template_directory_uri() . '/assets/css/startup-materialize.min.css', null, $theme_version, 'all' );
+    wp_enqueue_style( 'lam-material', get_template_directory_uri() . '/assets/css/startup-materialize.css', null, $theme_version, 'all' );
 	#wp_enqueue_style( 'lam-material', get_template_directory_uri() . '/assets/css/materialize.min.css', null, $theme_version, 'screen, projection' );
     wp_enqueue_style( 'lam-icon', get_template_directory_uri() . '/assets/css/icon.css', null, $theme_version, 'all' );
     wp_enqueue_style( 'lam-icon', get_template_directory_uri() . '/assets/css/lam.css', null, $theme_version, 'all' );

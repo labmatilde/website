@@ -15,7 +15,6 @@ get_header();
     <img src="http://placehold.it/1440x900" alt="">
     </div>
     <div class="phone-preview-sizer">
-    <div class="phone-preview"></div>
     <div class="image-container active" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/SEJA_VOLUNTÁRIO.png)"></div>
     <div class="image-container" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/DOAÇÃO_DE_ROUPAS-1.png)"></div>
     <div class="image-container" style="background-image:url(https://larassistencialmatilde.com.br/wp-content/uploads/2020/05/CESTA_BÁSICA-300x181.png)"></div>
@@ -24,8 +23,8 @@ get_header();
     <div class="header-background white"></div>
     <div class="header-wrapper row valign-wrapper">
         <div class="col s12 m8 offset-m2 valign">
-        <h1>Startup!</h1>
-        <span class="tagline">Show off your business in a whole new way.</span>
+        <h1>SEJA VOLUNTÁRIO</h1>
+        <span class="tagline">Todo amor do mundo em um só gesto!</span>
         <button class="read-more"><i class="icon-caret-down"></i></button>
         </div>
     </div>
@@ -34,8 +33,8 @@ get_header();
     <div class="header-background white"></div>
     <div class="header-wrapper row valign-wrapper">
         <div class="col s12 m8 offset-m2 valign">
-        <h1>Second!</h1>
-        <span class="tagline">Second tagline with more information.</span>
+        <h1>AQUEÇA UMA FAMILIA</h1>
+        <span class="tagline">doe roupas e tambêm aqueça o seu coração!</span>
         <button class="read-more"><i class="icon-caret-down"></i></button>
         </div>
     </div>
@@ -44,8 +43,8 @@ get_header();
         <div class="header-background white"></div>
             <div class="header-wrapper row valign-wrapper">
                 <div class="col s12 m8 offset-m2 valign">
-                <h1>Third!</h1>
-                <span class="tagline">Third tagline with more information.</span>
+                <h1>DOE UMA CESTA</h1>
+                <span class="tagline">Com sua ajuda podemos alimentar muitas familias!</span>
                 <button class="read-more"><i class="icon-caret-down"></i></button>
             </div>
         </div>
