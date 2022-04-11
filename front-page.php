@@ -214,7 +214,7 @@
                     </p>
                 </div>
                 <div class="col s12 m4">
-                    <img class="responsive-img" src="./assets/images/foto-voluntarios-trabalhando.png" alt="">
+                    <img class="responsive-img" src="<?= get_template_directory_uri(); ?>/assets/images/foto-voluntarios-trabalhando.png" alt="">
                 </div>
                 <div class="col s12 m8">
 
