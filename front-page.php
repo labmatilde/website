@@ -166,7 +166,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <a href="https://larassistencialmatilde.com.br/" class="brand-logo"><img class="logo-img"
-                        src="./assets/images/logo_lam_claro.png" alt=""></a>
+                        src="<?= get_template_directory_uri(); ?>/assets/images/logo_lam_claro.png" alt=""></a>
                 <a href="#" data-activates="mobile-lam" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#sobre">Sobre</a></li>
@@ -179,7 +179,7 @@
                 </ul>
 
                 <ul class="side-nav" id="mobile-lam">
-                    <li><img class="logo-mobile" src="./assets/images/logo_lam_claro.png" alt=""></li>
+                    <li><img class="logo-mobile" src="<?= get_template_directory_uri(); ?>/assets/images/logo_lam_claro.png" alt=""></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#voluntarios">Seja um Voluntario</a></li>
@@ -267,7 +267,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/cartaz-familia-lam.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/cartaz-familia-lam.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Familias<i
@@ -289,7 +289,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/cartaz-enxoval.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/cartaz-enxoval.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Gestantes<i
@@ -311,7 +311,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/cartaz-samaritanos.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/cartaz-samaritanos.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Samaritanos<i
@@ -333,7 +333,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/AME-SE.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/AME-SE.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Resgatando Almas<i
@@ -355,7 +355,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/AME-SE.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/AME-SE.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Ame se<i
@@ -377,7 +377,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/AME-SE.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/AME-SE.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Mocidade<i
@@ -399,7 +399,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/AME-SE.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/AME-SE.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Gaiolas Abertas<i
@@ -421,7 +421,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/AME-SE.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/AME-SE.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Clinica Vet<i
@@ -443,7 +443,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/AME-SE.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/AME-SE.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Lam Doce Lar<i
@@ -465,7 +465,7 @@
                 <div class="col s12 m4">
                     <div class="card sticky-action hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/AME-SE.png">
+                            <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/AME-SE.png">
                         </div> <!-- card-image -->
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Irmão Francisco<i
@@ -492,7 +492,7 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
-                    <img class="responsive-img banner-no-title" src="./assets/images/cartaz-seja-voluntario.png" alt="">
+                    <img class="responsive-img banner-no-title" src="<?= get_template_directory_uri(); ?>/assets/images/cartaz-seja-voluntario.png" alt="">
                 </div>
                 <div class="col s12 m6">
                     <h3 class="title">Seja um Voluntario</h3>
@@ -546,7 +546,7 @@
                         Segunda a Sabado das 10 as 18 horas</p>
                 </div>
                 <div class="col s12 m6">
-                    <img class="responsive-img banner-no-title" src="./assets/images/cartaz-chamada-bazar-simples.png"
+                    <img class="responsive-img banner-no-title" src="<?= get_template_directory_uri(); ?>/assets/images/cartaz-chamada-bazar-simples.png"
                         alt="">
                 </div>
             </div>
@@ -584,7 +584,7 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
-                    <img class="responsive-img banner-no-title" src="./assets/images/cartaz-como-doar.png" alt="">
+                    <img class="responsive-img banner-no-title" src="<?= get_template_directory_uri(); ?>/assets/images/cartaz-como-doar.png" alt="">
                 </div>
                 <div class="col s12 m6">
                     <h4 class="title">Seja você um de nossos padrinhos</h4>
