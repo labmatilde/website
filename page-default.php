@@ -122,8 +122,8 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m6">
-                <?php if( get_field('titulo') ): ?>
-                    <img class="responsive-img banner-no-title" src="<?php the_field('titulo'); ?>" alt="">
+                <?php if( get_field('foto_destaque') ): ?>
+                    <img class="responsive-img banner-no-title" src="<?php the_field('foto_destaque'); ?>" alt="">
                 <?php endif; ?>
             </div>
             <div class="col s12 m6">
