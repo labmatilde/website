@@ -81,12 +81,12 @@
 
             <?php 
             $values = get_field('selecionar_projetos_apresentados'); 
-            if($values) :
+           /* if($values) :
                 foreach($values as $value):
                     echo '<li>' . $value["post_title"] $value["post_content"] . '</li>';
                 endforeach;
 
-            endif;
+            endif;*/
             
             var_dump($values); ?>
 
