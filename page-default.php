@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Frontpage
+* Template Name: Homepage
 *
 * @package Labmatilde
 * @subpackage lam
