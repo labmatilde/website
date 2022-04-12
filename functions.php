@@ -67,7 +67,7 @@ function project_post_type() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'rewrite'               => $rewrite,
-		'capability_type'       => 'post',
+		'capability_type'       => 'page',
 	);
 	register_post_type( 'project_lam', $args );
 

@@ -83,13 +83,12 @@
             $values = get_field('selecionar_projetos_apresentados'); 
             if($values) :
                 foreach($values as $value):
-                    
+                    echo '<li>' . $value["post_title"] $value["post_content"] . '</li>';
                 endforeach;
 
             endif;
             
-            var_dump($values); 
-            ?>
+            var_dump($values); ?>
 
             <div class="col s12 m4">
                 <div class="card sticky-action hoverable">
