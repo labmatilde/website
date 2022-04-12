@@ -1,6 +1,5 @@
 <?php
 /**
-* Template Name: Singlepage
 *
 * @package Labmatilde
 * @subpackage lam

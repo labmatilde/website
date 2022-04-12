@@ -9,8 +9,9 @@
 ?>
 <?php get_header(); ?>
 
-<?php if(get_field('mostrar_sobre')): ?>
 <!-- SOBRE -->
+<?php if(get_field('mostrar_sobre')): ?>
+    
 <section id="sobre">
     <div class="container">
         <div class="row">
@@ -66,11 +67,13 @@
         </div>
     </div>
 </section> <!-- #sobre -->
+
 <?php endif; ?>
 
 
-<?php if(get_field('mostar_projetos')): ?>
 <!-- PROJETOS -->
+<?php if(get_field('mostar_projetos')): ?>
+
 <section id="projetos" class="dark">
     <div class="container">
         <div class="row">
@@ -108,9 +111,12 @@
         </div> <!-- .row -->
     </div> <!-- .container -->
 </section> <!-- #projetos -->
+
 <?php endif; ?>
 
+
 <!-- VOLUNTARIOS -->
+
 <section id="voluntario" class="no-title">
     <div class="container">
         <div class="row">
