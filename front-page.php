@@ -7,140 +7,7 @@
 * @since Lar Assistencial Matilde 1.0
 */
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LAM - Lar Assistencial Matilde</title>
-
-    <style>
-        .menu-top-bar {
-            background-color: #1b4052;
-        }
-
-        .topbar {
-            display: inline-flex;
-            color: white;
-        }
-
-        .list-top {
-            display: flex;
-            padding: 0 10px;
-        }
-
-        .list-top:first-child {
-            padding: 0;
-        }
-
-        .list-top:last-child {
-            padding: 0;
-        }
-
-        .link-top {
-            padding-top: 0px;
-            color: white;
-        }
-
-        .content-top {
-            padding-top: 3px;
-        }
-
-        nav {
-            background-color: #e3f6ff;
-        }
-
-        nav ul a {
-            color: #000;
-        }
-
-        .logo-img {
-            max-width: 60px;
-        }
-
-        .btn,
-        .btn-large {
-            background-color: #1b4052;
-        }
-
-        .btn:hover,
-        .btn-large:hover {
-            background-color: #55b5e0;
-        }
-
-        .no-title,
-        .banner-no-title {
-            padding-top: 30px;
-        }
-
-        section {
-            padding-bottom: 20px;
-        }
-
-        .title {
-            color: #55b5e0;
-        }
-
-        .lam-color-dark {
-            background-color: #1b4052;
-        }
-
-        #projetos {
-            background-color: #55b5e0;
-        }
-
-        #bazar {
-            background-color: #1b4052;
-        }
-
-        #doe {
-            background-color: #002849;
-        }
-
-        #doe .btn,
-        #doe .btn-large {
-            background-color: #ffffff;
-            color: #002849;
-            min-width: 237px;
-        }
-
-        .dark .title {
-            color: white;
-        }
-
-        .page-footer {
-            background-color: #1b4052;
-        }
-
-        nav a {
-            color: #55b5e0;
-        }
-
-        .pix-mobile {
-            color: rgba(0, 0, 0, 0.87);
-            display: block;
-            font-size: 14px;
-            font-weight: 500;
-            height: 48px;
-            line-height: 48px;
-            padding: 0 32px;
-        }
-
-        .logo-mobile {
-            max-width: 150px;
-            display: block;
-            margin: 10px auto 0;
-        }
-    </style>
-</head>
-
-<body>
+<?php get_header(); ?>
 
     <!-- TOP MENU -->
     <div id="topbar" class="menu-top-bar hide-on-med-and-down">
@@ -165,7 +32,7 @@
     <nav>
         <div class="container">
             <div class="nav-wrapper">
-                <a href="https://larassistencialmatilde.com.br/" class="brand-logo"><img class="logo-img"
+                <a href="<?= get_home_url(); ?>" class="brand-logo"><img class="logo-img"
                         src="<?= get_template_directory_uri(); ?>/assets/images/logo_lam_claro.png" alt=""></a>
                 <a href="#" data-activates="mobile-lam" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
@@ -622,39 +489,4 @@
         </div>
     </section>
 
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Endereços</h5>
-                    <p class="grey-text text-lighten-4">SEDE:
-                        Rua do Amerício, 358 - Itaquera, São Paulo - SP, 08240-300</p>
-                    <p class="grey-text text-lighten-4">BAZAR:
-                        Rua Rainha-da-Noite, 168 - Vila Verde, São Paulo - SP, 08235-000</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links importantes</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Brechó Matilde</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Rifas</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Agenda</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Doe</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2022 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script> $(".button-collapse").sideNav(); </script>
-</body>
-
-</html>
+<?php get_footer();

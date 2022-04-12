@@ -1,0 +1,116 @@
+.menu-top-bar {
+    background-color: #1b4052;
+}
+
+.topbar {
+    display: inline-flex;
+    color: white;
+}
+
+.list-top {
+    display: flex;
+    padding: 0 10px;
+}
+
+.list-top:first-child {
+    padding: 0;
+}
+
+.list-top:last-child {
+    padding: 0;
+}
+
+.link-top {
+    padding-top: 0px;
+    color: white;
+}
+
+.content-top {
+    padding-top: 3px;
+}
+
+nav {
+    background-color: #e3f6ff;
+}
+
+nav ul a {
+    color: #000;
+}
+
+.logo-img {
+    max-width: 60px;
+}
+
+.btn,
+.btn-large {
+    background-color: #1b4052;
+}
+
+.btn:hover,
+.btn-large:hover {
+    background-color: #55b5e0;
+}
+
+.no-title,
+.banner-no-title {
+    padding-top: 30px;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+.title {
+    color: #55b5e0;
+}
+
+.lam-color-dark {
+    background-color: #1b4052;
+}
+
+#projetos {
+    background-color: #55b5e0;
+}
+
+#bazar {
+    background-color: #1b4052;
+}
+
+#doe {
+    background-color: #002849;
+}
+
+#doe .btn,
+#doe .btn-large {
+    background-color: #ffffff;
+    color: #002849;
+    min-width: 237px;
+}
+
+.dark .title {
+    color: white;
+}
+
+.page-footer {
+    background-color: #1b4052;
+}
+
+nav a {
+    color: #55b5e0;
+}
+
+.pix-mobile {
+    color: rgba(0, 0, 0, 0.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+}
+
+.logo-mobile {
+    max-width: 150px;
+    display: block;
+    margin: 10px auto 0;
+}
