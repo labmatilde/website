@@ -78,17 +78,8 @@
                 <h2 class="title"><?php _e('Projetos'); ?></h2>
             </div>
 
-
-            <?php 
-            $values = get_field('selecionar_projetos_apresentados'); 
-            if($values) :
-                foreach($values as $value):
-                    echo '<li>' . $value->post_title . '</li>';
-                endforeach;
-
-            endif;
-            
-            var_dump($values); ?>
+            <?php $values = get_field('selecionar_projetos_apresentados'); 
+            if($values) : foreach($values as $value): ?>
 
             <div class="col s12 m4">
                 <div class="card sticky-action hoverable">
@@ -96,9 +87,9 @@
                         <img class="activator" src="<?= get_template_directory_uri(); ?>/assets/images/cartaz-familia-lam.png">
                     </div> <!-- card-image -->
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Familias<i
+                        <span class="card-title activator grey-text text-darken-4"><?= $value->post_title; ?><i
                                 class="material-icons right">more_vert</i></span>
-                        <p><a href="projetos.html">Acessar projeto</a></p>
+                        <p><a href="<?= $value->guid; ?>">Acessar projeto</a></p>
                     </div> <!-- card-content -->
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Projeto Familias<i
@@ -112,6 +103,7 @@
                 </div> <!-- card -->
             </div> <!-- col -->
 
+            <?php endforeach; endif; ?>
         
         </div> <!-- .row -->
     </div> <!-- .container -->
