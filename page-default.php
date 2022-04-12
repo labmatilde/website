@@ -65,7 +65,7 @@
     </div>
 </section> <!-- #sobre -->
 
-<?php if(get_field('mostar_secao')); ?>
+<?php if(get_field('mostar_secao')): ?>
 <!-- PROJETOS -->
 <section id="projetos" class="dark">
     <div class="container">
