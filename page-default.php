@@ -79,7 +79,17 @@
             </div>
 
 
-            <?php $values = get_field('selecionar_projetos_apresentados'); print_r($values); ?>
+            <?php 
+            $values = get_field('selecionar_projetos_apresentados'); 
+            if($values) :
+                foreach($values as $value):
+                    echo '<li>' . $value . '</li>';
+                endforeach;
+
+            endif;
+            
+            var_dump($values); 
+            ?>
 
             <div class="col s12 m4">
                 <div class="card sticky-action hoverable">
