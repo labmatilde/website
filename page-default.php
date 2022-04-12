@@ -83,7 +83,7 @@
             $values = get_field('selecionar_projetos_apresentados'); 
             if($values) :
                 foreach($values as $value):
-                    echo '<li>' . $value . '</li>';
+                    
                 endforeach;
 
             endif;
