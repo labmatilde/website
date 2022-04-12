@@ -1,6 +1,15 @@
 <?php
 #https://generatewp.com/generator/
 
+add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'custom-background' );
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo', array(
+    'height' => 480,
+    'width'  => 720,
+) );
+
 // Register Custom Post Type
 function project_post_type() {
 
