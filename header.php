@@ -8,7 +8,7 @@
 */
 ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="<?php bloginfo('language'); ?>">
 
 <head>
 
@@ -21,9 +21,12 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LAM - Lar Assistencial Matilde</title>
+    <title><?php bloginfo('name'); ?></title> 
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>;charset=<?php bloginfo('charset'); ?>">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
 
-    <?php wp_head(); ?>
+
+    <?php #wp_head(); ?>
 </head>
 
 <body <?php body_class('body-lam'); ?>>
