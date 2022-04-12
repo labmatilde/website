@@ -1,14 +1,70 @@
 <?php
 #https://generatewp.com/generator/
 
-add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'custom-background' );
-add_theme_support( 'title-tag' );
-add_theme_support( 'custom-logo', array(
-    'height' => 480,
-    'width'  => 720,
-) );
+// Register Navigation Menus
+function lam_navigation_menus() {
+
+	$locations = array(
+		'header' => __( 'Menu Cabecalho', 'lam_theme' ),
+		'footer' => __( 'Menu Rodape', 'lam_theme' ),
+		'topbar' => __( 'Menu do Topo', 'lam_theme' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'lam_navigation_menus' );
+
+// Register Theme Features
+function lam_theme_features()  {
+
+	// Add theme support for Automatic Feed Links
+	add_theme_support( 'automatic-feed-links' );
+
+	// Add theme support for Post Formats
+	add_theme_support( 'post-formats', array( 'status', 'gallery', 'image', 'video', 'link' ) );
+
+	// Add theme support for Featured Images
+	add_theme_support( 'post-thumbnails' );
+
+	// Add theme support for Custom Background
+	$background_args = array(
+		'default-color'          => '',
+		'default-image'          => '',
+		'default-repeat'         => '',
+		'default-position-x'     => '',
+		'wp-head-callback'       => '',
+		'admin-head-callback'    => '',
+		'admin-preview-callback' => '',
+	);
+	add_theme_support( 'custom-background', $background_args );
+
+	// Add theme support for Custom Header
+	$header_args = array(
+		'default-image'          => '',
+		'width'                  => 0,
+		'height'                 => 0,
+		'flex-width'             => false,
+		'flex-height'            => false,
+		'uploads'                => true,
+		'random-default'         => false,
+		'header-text'            => false,
+		'default-text-color'     => '',
+		'wp-head-callback'       => '',
+		'admin-head-callback'    => '',
+		'admin-preview-callback' => '',
+		'video'                  => true,
+		'video-active-callback'  => '',
+	);
+	add_theme_support( 'custom-header', $header_args );
+
+	// Add theme support for HTML5 Semantic Markup
+	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
+
+	// Add theme support for Translation
+	load_theme_textdomain( 'lam_theme', get_template_directory() . '/language' );
+}
+add_action( 'after_setup_theme', 'lam_theme_features' );
+
 
 // Register Custom Post Type
 function project_post_type() {
@@ -73,3 +129,34 @@ function project_post_type() {
 
 }
 add_action( 'init', 'project_post_type', 0 );
+
+
+// Register Sidebars
+function lam_sidebars() {
+
+	$args = array(
+		'id'            => 'side1',
+		'class'         => 'sidebar',
+		'name'          => __( 'Footer', 'lam_theme' ),
+		'description'   => __( 'Sidebar do Footer', 'lam_theme' ),
+	);
+	register_sidebar( $args );
+
+	$args = array(
+		'id'            => 'side2',
+		'class'         => 'sidebar',
+		'name'          => __( 'Projetos', 'lam_theme' ),
+		'description'   => __( 'Barra lateral de projetos', 'lam_theme' ),
+	);
+	register_sidebar( $args );
+
+	$args = array(
+		'id'            => 'side3',
+		'class'         => 'sidebar',
+		'name'          => __( 'Posts', 'lam_theme' ),
+		'description'   => __( 'Barra Lateral de posts', 'lam_theme' ),
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'lam_sidebars' );
