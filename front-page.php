@@ -14,15 +14,12 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m12">
-                <h1 class="title">Lar Assistencial Matilde</h1>
-                <p>Somos uma FAMÍLIA, que se agrega e que aumenta a cada dia, Somos sementes da seara do bem com
-                    mãos
-                    dispostas no
-                    cultivo do amor aos nossos irmãos e semelhantes. Promover a formação e o apoio integral da
-                    criança,
-                    do adolescente,
-                    do jovem, do adulto, do idoso e das famílias, buscando a educação à fé e à cidadania.
-                </p>
+                <?php if( get_field('titulo') ): ?>
+                    <h1 class="title"><?php the_field('titulo'); ?></h1>
+                <?php endif; ?>
+                <?php if( get_field('descricao') ): ?>
+                    <?php the_field('descricao'); ?>
+                <?php endif; ?>
             </div>
             <div class="col s12 m4">
                 <img class="responsive-img" src="<?= get_template_directory_uri(); ?>/assets/images/foto-voluntarios-trabalhando.png" alt="">
