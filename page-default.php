@@ -65,6 +65,7 @@
     </div>
 </section> <!-- #sobre -->
 
+<?php if(get_field('mostar_secao')); ?>
 <!-- PROJETOS -->
 <section id="projetos" class="dark">
     <div class="container">
@@ -294,6 +295,7 @@
         </div> <!-- .row -->
     </div> <!-- .container -->
 </section> <!-- #projetos -->
+<?php endif; ?>
 
 <!-- VOLUNTARIOS -->
 <section id="voluntario" class="no-title">
