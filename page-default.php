@@ -125,7 +125,7 @@
             </div>
             <div class="col s12 m6">
                 <h3 class="title">Seja um Voluntario</h3>
-                <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>Acessar
+                <a class="waves-effect waves-light btn-large" href="#!" target="_blank" rel="noopener noreferrer"><i class="material-icons left">cloud</i>Acessar
                     Formulário</a>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, fugit. Quasi non est ipsa

@@ -79,6 +79,19 @@
     </div>
 </footer>
 
+
+<div class="fixed-action-btn toolbar">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i></a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+
 <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/assets/js/jquery-3.2.1.min.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="<?= get_template_directory_uri(); ?>/assets/js/materialize.min.js"></script>
