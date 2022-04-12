@@ -9,6 +9,7 @@
 ?>
 <?php get_header(); ?>
 
+<?php if(get_field('mostrar_sobre')): ?>
 <!-- SOBRE -->
 <section id="sobre">
     <div class="container">
@@ -22,50 +23,52 @@
                 <?php endif; ?>
             </div>
             <div class="col s12 m4">
-                <img class="responsive-img" src="<?= get_template_directory_uri(); ?>/assets/images/foto-voluntarios-trabalhando.png" alt="">
+                <?php if( get_field('foto_apresentacao') ): ?>
+                    <img class="responsive-img" src="<?php the_field('foto_apresentacao'); ?>" alt="" />
+                <?php endif; ?>
             </div>
             <div class="col s12 m8">
 
-                <h4 class="title">Projetos sem fins lucrativos:</h4>
-                <p>A transformação do mundo em um lugar melhor como objetivo principal.
-                    O trabalho, na maior parte do tempo, fica por conta dos times de voluntários,
-                    que se doam para melhorar a vida de pessoas que muitas vezes nem conhecem.
-                    Vale dizer que o maior combustível desses projetos é a vontade humana de fazer o bem.</p>
+                <?php if( get_field('titulo_desc') ): ?>
+                    <h4 class="title"><?php the_field('titulo_desc'); ?></h4>
+                <?php endif; ?>
+                <?php if( get_field('descricao_da_foto') ): ?>
+                    <?php the_field('descricao_da_foto'); ?>
+                <?php endif; ?>
+
             </div>
         </div>
         <div class="row">
             <div class="col s12 m4">
                 <div class="card lam-color-dark">
                     <div class="card-content white-text">
-                        <span class="card-title">Missão</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <span class="card-title"><?php _e('Missão'); ?></span>
+                        <p><?php the_field('card_missao'); ?></p>
                     </div>
                 </div>
             </div>
             <div class="col s12 m4">
                 <div class="card lam-color-dark">
                     <div class="card-content white-text">
-                        <span class="card-title">Visão</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <span class="card-title"><?php _e('Visão'); ?></span>
+                        <p><?php the_field('card_visao'); ?></p>
                     </div>
                 </div>
             </div>
             <div class="col s12 m4">
                 <div class="card lam-color-dark">
                     <div class="card-content white-text">
-                        <span class="card-title">Valores</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <span class="card-title"><?php _e('Valores'); ?></span>
+                        <p><?php the_field('card_valores'); ?></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section> <!-- #sobre -->
+<?php endif; ?>
 
-<?php if(get_field('mostar_secao')): ?>
+<?php if(get_field('mostar_projetos')): ?>
 <!-- PROJETOS -->
 <section id="projetos" class="dark">
     <div class="container">
