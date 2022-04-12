@@ -116,46 +116,31 @@
 
 
 <!-- VOLUNTARIOS -->
+<?php if(get_field('motrar_voluntarios')): ?>
 
 <section id="voluntario" class="no-title">
     <div class="container">
         <div class="row">
             <div class="col s12 m6">
-                <img class="responsive-img banner-no-title" src="<?= get_template_directory_uri(); ?>/assets/images/cartaz-seja-voluntario.png" alt="">
+                <?php if( get_field('titulo') ): ?>
+                    <img class="responsive-img banner-no-title" src="<?php the_field('titulo'); ?>" alt="">
+                <?php endif; ?>
             </div>
             <div class="col s12 m6">
-                <h3 class="title">Seja um Voluntario</h3>
-                <a class="waves-effect waves-light btn-large" href="#!" target="_blank" rel="noopener noreferrer"><i class="material-icons left">cloud</i>Acessar
-                    Formulário</a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, fugit. Quasi non est ipsa
-                    quas
-                    provident ratione, ea inventore pariatur autem excepturi, quisquam eum, odio sint quae sequi
-                    tempora
-                    iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, fugit. Quasi non est
-                    ipsa quas
-                    provident ratione, ea inventore pariatur autem excepturi, quisquam eum, odio sint quae sequi
-                    tempora
-                    iste.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, fugit. Quasi non est ipsa
-                    quas
-                    provident ratione, ea inventore pariatur autem excepturi, quisquam eum, odio sint quae sequi
-                    tempora
-                    iste.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, fugit. Quasi non est ipsa
-                    quas
-                    provident ratione, ea inventore pariatur autem excepturi, quisquam eum, odio sint quae sequi
-                    tempora
-                    iste.
-                </p>
+                <h3 class="title"><?php _e('Seja um Voluntario'); ?></h3>
+                <?php if( get_field('pagina_do_formulario') ): ?>
+                    <a class="waves-effect waves-light btn-large" href="<?php the_field('pagina_do_formulario'); ?>" target="_blank" rel="noopener noreferrer"><i class="material-icons left">card_membership</i><?php _e('Acessar
+                    Formulário'); ?></a>
+                <?php endif; ?>
+                <?php if( get_field('descricao_secao_de_voluntarios') ): ?>
+                    <?php the_field('descricao_secao_de_voluntarios'); ?>
+                <?php endif; ?>
             </div>
         </div>
     </div>
 </section>
+
+<?php endif; ?>
 
 <!-- BAZAR -->
 <section id="bazar" class="dark no-title">

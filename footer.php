@@ -85,10 +85,10 @@
       <i class="large material-icons">mode_edit</i>
     </a>
     <ul>
-      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i></a></li>
-      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
-      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
-      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i>Nossos Eventos</a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i>Faça uma Doação</a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i>Seja Voluntario</a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i>Fale conosco</a></li>
     </ul>
   </div>
 
