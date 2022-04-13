@@ -18,9 +18,7 @@
 					<?php the_content(); ?>
 				</div>
 			</div>
-			<div class="sidebar col s12 m4">
-				<?php get_sidebar(); ?>
-			</div>
+			<?php get_sidebar(); ?>
 		</div>
 	</div>
 </section>
