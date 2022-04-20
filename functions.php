@@ -274,71 +274,13 @@ function lam_sidebars() {
 }
 add_action( 'widgets_init', 'lam_sidebars' );
 
-/*
 // Register Settings Page
-function footer_settings_page() {
-
-    register_setting( 'wporg', 'wporg_options' );
- 
-    add_settings_section(
-        'wporg_section_developers',
-        __( 'The Matrix has you.', 'wporg' ), 'footer_settings_page_callback',
-        'wporg'
-    );
- 
-    add_settings_field(
-        'wporg_field_pill', // As of WP 4.6 this value is used only internally.
-                                // Use $args' label_for to populate the id inside the callback.
-            __( 'Pill', 'wporg' ),
-        'wporg_field_pill_cb',
-        'wporg',
-        'wporg_section_developers',
-        array(
-            'label_for'         => 'wporg_field_pill',
-            'class'             => 'wporg_row',
-            'wporg_custom_data' => 'custom',
-        )
-    );
-}
-add_action( 'admin_init', 'footer_settings_page' );
-
-function footer_settings_page_callback( $args ) {
-    ?>
-    <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Follow the white rabbit.', 'wporg' ); ?></p>
-    <?php
-}
-
-function wporg_field_pill_cb( $args ) {
-
-    $options = get_option( 'wporg_options' );
-    ?>
-    <select
-            id="<?php echo esc_attr( $args['label_for'] ); ?>"
-            data-custom="<?php echo esc_attr( $args['wporg_custom_data'] ); ?>"
-            name="wporg_options[<?php echo esc_attr( $args['label_for'] ); ?>]">
-        <option value="red" <?php echo isset( $options[ $args['label_for'] ] ) ? ( selected( $options[ $args['label_for'] ], 'red', false ) ) : ( '' ); ?>>
-            <?php esc_html_e( 'red pill', 'wporg' ); ?>
-        </option>
-        <option value="blue" <?php echo isset( $options[ $args['label_for'] ] ) ? ( selected( $options[ $args['label_for'] ], 'blue', false ) ) : ( '' ); ?>>
-            <?php esc_html_e( 'blue pill', 'wporg' ); ?>
-        </option>
-    </select>
-    <p class="description">
-        <?php esc_html_e( 'You take the blue pill and the story ends. You wake in your bed and you believe whatever you want to believe.', 'wporg' ); ?>
-    </p>
-    <p class="description">
-        <?php esc_html_e( 'You take the red pill and you stay in Wonderland and I show you how deep the rabbit-hole goes.', 'wporg' ); ?>
-    </p>
-    <?php
-}
-*/
-function wporg_options_page() {
+function footer_options_page() {
     add_menu_page(
-        'WPOrg',
-        'WPOrg Options',
+        'Footer',
+        'Footer Options',
         'manage_options',
-        'wporg',
-        'wporg_options_page_html'
+        'footer_lam'
     );
 }
-add_action( 'admin_menu', 'wporg_options_page' );
+add_action( 'admin_menu', 'footer_options_page' );
