@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Homepage
+* Template Name: Evento
 *
 * @package Labmatilde
 * @subpackage lam
