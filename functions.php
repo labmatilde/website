@@ -281,7 +281,7 @@ function footer_settings_page() {
  
     add_settings_section(
         'wporg_section_developers',
-        __( 'The Matrix has you.', 'wporg' ), 'wporg_section_developers_callback',
+        __( 'The Matrix has you.', 'wporg' ), 'footer_settings_page_callback',
         'wporg'
     );
  
@@ -300,3 +300,9 @@ function footer_settings_page() {
     );
 }
 add_action( 'admin_init', 'footer_settings_page' );
+
+function footer_settings_page_callback( $args ) {
+    ?>
+    <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Follow the white rabbit.', 'wporg' ); ?></p>
+    <?php
+}
