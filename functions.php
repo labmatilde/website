@@ -244,7 +244,6 @@ function kit_post_type() {
 }
 add_action( 'init', 'kit_post_type', 0 );
 
-
 // Register Sidebars
 function lam_sidebars() {
 
@@ -274,3 +273,30 @@ function lam_sidebars() {
 
 }
 add_action( 'widgets_init', 'lam_sidebars' );
+
+// Register Settings Page
+function footer_settings_page() {
+
+    register_setting( 'wporg', 'wporg_options' );
+ 
+    add_settings_section(
+        'wporg_section_developers',
+        __( 'The Matrix has you.', 'wporg' ), 'wporg_section_developers_callback',
+        'wporg'
+    );
+ 
+    add_settings_field(
+        'wporg_field_pill', // As of WP 4.6 this value is used only internally.
+                                // Use $args' label_for to populate the id inside the callback.
+            __( 'Pill', 'wporg' ),
+        'wporg_field_pill_cb',
+        'wporg',
+        'wporg_section_developers',
+        array(
+            'label_for'         => 'wporg_field_pill',
+            'class'             => 'wporg_row',
+            'wporg_custom_data' => 'custom',
+        )
+    );
+}
+add_action( 'admin_init', 'footer_settings_page' );
