@@ -1,8 +1,6 @@
 <?php
 #https://generatewp.com/generator/
-
-
-tgmpa_register
+#http://tgmpluginactivation.com/
 
 // Register Navigation Menus
 function lam_navigation_menus() {
