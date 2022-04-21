@@ -1,6 +1,9 @@
 <?php
 #https://generatewp.com/generator/
 
+
+tgmpa_register
+
 // Register Navigation Menus
 function lam_navigation_menus() {
 
@@ -274,16 +277,9 @@ function lam_sidebars() {
 }
 add_action( 'widgets_init', 'lam_sidebars' );
 
-// Register Settings Page
-function footer_options_page() {
-    add_menu_page(
-        'Footer',
-        'Footer Options',
-        'manage_options',
-        'footer_lam'
-    );
-}
-add_action( 'admin_menu', 'footer_options_page' );
+// Register TGMPA
+require_once(get_template_directory() . '/includes/tgmpa/tgmpa-configuration.php');
+
 
 // ACF
 if( function_exists('acf_add_options_page') ) {
