@@ -63,7 +63,7 @@ function lam_theme_register_required_plugins() {
 		array(
 			'name'               => 'ACF PRO Plugin', // The plugin name.
 			'slug'               => 'acf-pro-plugin', // The plugin slug (typically the folder name).
-			'source'             => get_template_directory() . '/includes/tgmpa/plugins/advanced-custom-fields-pro.zip', // The plugin source.
+			'source'             => get_template_directory() . '/lib/plugins/advanced-custom-fields-pro.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
@@ -72,6 +72,7 @@ function lam_theme_register_required_plugins() {
 			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
 		),
 
+		/*
 		// This is an example of how to include a plugin from an arbitrary external source in your theme.
 		array(
 			'name'         => 'TGM New Media Plugin', // The plugin name.
@@ -108,6 +109,7 @@ function lam_theme_register_required_plugins() {
 			'slug'        => 'wordpress-seo',
 			'is_callable' => 'wpseo_init',
 		),
+		*/
 
 	);
 
