@@ -31,7 +31,7 @@
  * Plugin:
  * require_once dirname( __FILE__ ) . '/path/to/class-tgm-plugin-activation.php';
  */
-require_once get_template_directory() . '/path/to/class-tgm-plugin-activation.php';
+require_once get_template_directory() . '/includes/tgmpa/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'lam_theme_register_required_plugins' );
 
@@ -63,7 +63,7 @@ function lam_theme_register_required_plugins() {
 		array(
 			'name'               => 'ACF PRO Plugin', // The plugin name.
 			'slug'               => 'acf-pro-plugin', // The plugin slug (typically the folder name).
-			'source'             => get_template_directory() . '/lib/plugins/advanced-custom-fields-pro.zip', // The plugin source.
+			'source'             => get_template_directory() . '/includes/tgmpa/plugins/advanced-custom-fields-pro.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
