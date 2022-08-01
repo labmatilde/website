@@ -109,7 +109,7 @@ function project_post_type() {
 		'label'                 => __( 'Project', 'lam_theme' ),
 		'description'           => __( 'Projetos que acontecem dentro do lar assistencial matilde', 'lam_theme' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'excerpt' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -167,7 +167,7 @@ function rifa_post_type() {
 		'label'                 => __( 'Rifa', 'lam_theme' ),
 		'description'           => __( 'Rifas realizadas', 'lam_theme' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -277,7 +277,6 @@ add_action( 'widgets_init', 'lam_sidebars' );
 
 // Register TGMPA
 require_once(get_template_directory() . '/includes/tgmpa/tgmpa-configuration.php');
-
 
 // ACF
 if( function_exists('acf_add_options_page') ) {
