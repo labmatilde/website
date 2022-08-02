@@ -85,10 +85,6 @@
             <?php $values = get_field('selecionar_projetos_apresentados'); 
             if($values) : foreach($values as $value): ?>
 
-<#?= print_r($value); ?>
-
-<?= print_r(get_field('pix_do_projeto', $value->ID)); ?>
-
 
             <div class="col s12 m4">
                 <div class="card sticky-action hoverable">
@@ -106,8 +102,7 @@
                         <p> <?= $value->post_excerpt; ?>
                         </p>
                         <p class="card-pix"><i class="material-icons">account_balance</i><span
-                                class="content-card-pix">CHAVE
-                                PIX: 40.416.297/0001-95</span></p>
+                                class="content-card-pix"><?php _e('CHAVE PIX:'); ?> <?= get_field('pix_do_projeto', $value->ID); ?></span></p>
                     </div> <!-- card-reveal -->
                 </div> <!-- card -->
             </div> <!-- col -->
