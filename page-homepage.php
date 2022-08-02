@@ -92,7 +92,7 @@
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4"><?= $value->post_title; ?><i
                                 class="material-icons right">more_vert</i></span>
-                        <!--<p><a href="<?= #$value->guid; ?>">Acessar projeto</a></p>-->
+                        <!--<p><a href="<#?= $value->guid; ?>">Acessar projeto</a></p>-->
                     </div> <!-- card-content -->
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Projeto Familias<i
