@@ -81,10 +81,11 @@
                 <h2 class="title"><?php _e('Projetos'); ?></h2>
             </div>
 
+            <?= print_r(get_sub_field_object('pix_do_projeto')); ?>
+
             <?php $values = get_field('selecionar_projetos_apresentados'); 
             if($values) : foreach($values as $value): ?>
 
-            <?= print_r(get_sub_field_object('pix_do_projeto')); ?>
 
             <div class="col s12 m4">
                 <div class="card sticky-action hoverable">
