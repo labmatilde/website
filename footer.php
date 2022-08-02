@@ -5,11 +5,21 @@
 * @since Lar Assistencial Matilde 1.0
 */
 
-
-if (get_fields('secao_como_doar', 'group_6260aca09e34b')) {
-   echo print_r(get_fields('secao_como_doar', 'group_6260aca09e34b'));
-}
 ?>
+
+<?php if( have_rows('secao_como_doar', 'option') ): ?>
+
+<ul>
+
+<?php while( have_rows('secao_como_doar', 'option') ) : the_row(); ?>
+
+    <li><?php the_sub_field('titulo_da_secao_doar'); ?></li>
+
+<?php endwhile; ?>
+
+</ul>
+
+<?php endif; ?>
 
 
 <!-- DOE -->
