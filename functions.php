@@ -321,3 +321,6 @@ function lam_add_woocommerce_support() {
 }
 
 add_action( 'after_setup_theme', 'lam_add_woocommerce_support' );
+
+
+wp_cache_flush();
