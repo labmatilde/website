@@ -36,7 +36,7 @@
                 <div class="white-text"><?php the_sub_field('descricao_da_secao_doar'); ?></div>
                 <?php if (get_sub_field('links_de_doacao')): 
                     $values = get_sub_field('links_de_doacao'); 
-                        if($values) : foreach($values as $value): print_r($value)?>
+                        if($values) : foreach($values as $value): print_r($value['titulo_botao'])?>
                 <p><a class="waves-effect waves-light btn" href="<#?= $value->link_do_botao; ?>" target="_blank" rel="noopener noreferrer">
                 <i class="material-icons left">attach_money</i><#?= $value->titulo_botao; ?></a></p>
                 <?php endforeach; endif; endif; ?>
