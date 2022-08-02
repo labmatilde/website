@@ -44,7 +44,7 @@
         <div class="row">
             <div class="col s12">
                 <h3 class="title"><?php the_sub_field('titulo_da_secao_contato'); ?></h3>
-                <div><?php the_sub_field('formulario_da_secao_contato'); ?></div>
+                <div><?= do_shortcode(get_sub_field('formulario_da_secao_contato')); ?></div>
             </div>
         </div>
     </div>
