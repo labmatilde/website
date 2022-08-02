@@ -83,7 +83,7 @@
 
             <?php $values = get_field('selecionar_projetos_apresentados'); 
             if($values) : foreach($values as $value): ?>
-            <?= print_r(value); ?>
+            <?= print_r($value); ?>
 
             <div class="col s12 m4">
                 <div class="card sticky-action hoverable">
