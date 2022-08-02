@@ -4,7 +4,13 @@
 * @subpackage lam
 * @since Lar Assistencial Matilde 1.0
 */
+
+
+if (get_field('secao_como_doar')) {
+    print_r(get_field('secao_como_doar'));
+}
 ?>
+
 
 <!-- DOE -->
 <section id="doe" class="dark no-title">
