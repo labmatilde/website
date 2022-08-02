@@ -7,19 +7,6 @@
 
 ?>
 
-
-<ul>
-
-<?php while( have_rows('secao_como_doar', 'option') ) : the_row(); ?>
-
-    <li><?php the_sub_field('titulo_da_secao_doar'); ?></li>
-
-<?php endwhile; ?>
-
-</ul>
-
-
-
 <?php if( have_rows('secao_como_doar', 'option') ):
     while( have_rows('secao_como_doar', 'option') ) : the_row(); 
         if (get_sub_field('ativar_secao_doar')): ?>
@@ -47,16 +34,25 @@
 
     <?php endif; endwhile; endif; ?>
 
+<?php if( have_rows('secao_contato', 'option') ):
+    while( have_rows('secao_contato', 'option') ) : the_row(); 
+        if (get_sub_field('ativar_secao_contato')): ?>
+
 <!-- CONTATO -->
 <section id="contato">
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h3 class="title">Entre em contato conosco</h3>
+                <h3 class="title"><?php the_sub_field('titulo_da_secao_contato'); ?></h3>
+                <div><?php the_sub_field('formulario_da_secao_contato'); ?></div>
             </div>
         </div>
     </div>
 </section>
+
+
+<?php endif; endwhile; endif; ?>
+
 
 
 <footer class="page-footer">
