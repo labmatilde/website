@@ -7,7 +7,7 @@
 
 
 if (get_field('secao_como_doar')) {
-    print_r(get_field('secao_como_doar'));
+   echo print_r(get_field('secao_como_doar'));
 }
 ?>
 
