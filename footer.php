@@ -6,8 +6,8 @@
 */
 
 
-if (get_fields('secao_como_doar', 'option')) {
-   echo print_r(get_fields('secao_como_doar', 'option'));
+if (get_fields('secao_como_doar', 'group_6260aca09e34b')) {
+   echo print_r(get_fields('secao_como_doar', 'group_6260aca09e34b'));
 }
 ?>
 
