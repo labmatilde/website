@@ -6,7 +6,7 @@
 */
 
 
-if (get_field('secao_como_doar')) {
+if (get_fields('secao_como_doar', 'option')) {
    echo print_r(get_fields('secao_como_doar', 'option'));
 }
 ?>
