@@ -34,7 +34,7 @@
             <div class="col s12 m6">
                 <h4 class="title"><?php the_sub_field('titulo_da_secao_doar'); ?></h4>
                 <div class="white-text"><?php the_sub_field('descricao_da_secao_doar'); ?></div>
-                <?php if (get_sub_field('links_de_doacao')): printf(get_sub_field('links_de_doacao')); ?>
+                <?php if (get_sub_field('links_de_doacao')): print_r(get_sub_field('links_de_doacao')); ?>
                 <p><a class="waves-effect waves-light btn" href="http://" target="_blank" rel="noopener noreferrer"><i class="material-icons left">attach_money</i>5,00
                         por
                         Mês</a></p>
