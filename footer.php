@@ -7,7 +7,6 @@
 
 ?>
 
-<?php if( have_rows('secao_como_doar', 'option') ): ?>
 
 <ul>
 
@@ -19,8 +18,11 @@
 
 </ul>
 
-<?php endif; ?>
 
+
+<?php if( have_rows('secao_como_doar', 'option') ):
+    while( have_rows('secao_como_doar', 'option') ) : the_row(); 
+        if (get_sub_field('ativar_secao_doar')): ?>
 
 <!-- DOE -->
 <section id="doe" class="dark no-title">
@@ -30,29 +32,19 @@
                 <img class="responsive-img banner-no-title" src="<?= get_template_directory_uri(); ?>/assets/images/cartaz-como-doar.png" alt="">
             </div>
             <div class="col s12 m6">
-                <h4 class="title">Seja você um de nossos padrinhos</h4>
-                <p class="white-text">Com doações mensais no valor que desejar</p>
-                <p><a class="waves-effect waves-light btn"><i class="material-icons left">attach_money</i>5,00
+                <h4 class="title"><?php the_sub_field('titulo_da_secao_doar'); ?></h4>
+                <div class="white-text"><?php the_sub_field('descricao_da_secao_doar'); ?></div>
+                <?php if (get_sub_field('links_de_doacao')): printf(get_sub_field('links_de_doacao')); ?>
+                <p><a class="waves-effect waves-light btn" href="http://" target="_blank" rel="noopener noreferrer"><i class="material-icons left">attach_money</i>5,00
                         por
                         Mês</a></p>
-                <p><a class="waves-effect waves-light btn"><i class="material-icons left">attach_money</i>10,00
-                        por
-                        Mês</a></p>
-                <p> <a class="waves-effect waves-light btn"><i class="material-icons left">attach_money</i>20,00
-                        por
-                        Mês</a></p>
-                <p> <a class="waves-effect waves-light btn"><i class="material-icons left">attach_money</i>40,00
-                        por
-                        Mês</a></p>
-                <p> <a class="waves-effect waves-light btn"><i class="material-icons left">attach_money</i>100,00
-                        por
-                        Mês</a></p>
-                <p> <a class="waves-effect waves-light btn"><i class="material-icons left">attach_money</i>Outros
-                        Valores</a></p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
 </section>
+
+    <?php endif; endwhile; endif; ?>
 
 <!-- CONTATO -->
 <section id="contato">
