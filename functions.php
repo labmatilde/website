@@ -132,6 +132,7 @@ function project_post_type() {
 add_action( 'init', 'project_post_type', 0 );
 
 // Register Custom Post Type
+/**
 function rifa_post_type() {
 
 	$labels = array(
@@ -187,8 +188,10 @@ function rifa_post_type() {
 
 }
 add_action( 'init', 'rifa_post_type', 0 );
+*/
 
 // Register Custom Post Type
+/**
 function kit_post_type() {
 
 	$labels = array(
@@ -244,6 +247,7 @@ function kit_post_type() {
 
 }
 add_action( 'init', 'kit_post_type', 0 );
+*/
 
 // Register Sidebars
 function lam_sidebars() {
