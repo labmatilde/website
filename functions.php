@@ -321,5 +321,3 @@ function lam_add_woocommerce_support() {
 }
 
 add_action( 'after_setup_theme', 'lam_add_woocommerce_support' );
-
-add_action ( 'action_tag' , array( $this , 'my_callback' , 30 ) );

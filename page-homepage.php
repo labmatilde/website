@@ -102,7 +102,7 @@
                         <p> <?= $value->post_excerpt; ?>
                         </p>
                         <p class="card-pix"><i class="material-icons">account_balance</i><span
-                                class="content-card-pix"><?php _e('CHAVE PIX:'); ?> <?= get_field('pix_do_projeto', $value->ID); ?></span></p>
+                                class="content-card-pix"><?php _e('CHAVE PIX: '); ?> <?php the_field('pix_do_projeto', $value->ID); ?></span></p>
                     </div> <!-- card-reveal -->
                 </div> <!-- card -->
             </div> <!-- col -->
@@ -130,7 +130,8 @@
             <div class="col s12 m6">
                 <h3 class="title"><?php _e('Seja um Voluntario'); ?></h3>
                 <?php if( get_field('pagina_do_formulario') ): ?>
-                    <a class="waves-effect waves-light btn-large" href="<?php the_field('pagina_do_formulario'); ?>" target="_blank" rel="noopener noreferrer"><i class="material-icons left">card_membership</i><?php _e('Acessar
+                    <a class="waves-effect waves-light btn-large" href="<?php the_field('pagina_do_formulario'); ?>" target="_blank" rel="noopener noreferrer">
+                    <i class="material-icons left">card_membership</i><?php _e('Acessar
                     Formulário'); ?></a>
                 <?php endif; ?>
                 <?php if( get_field('descricao_secao_de_voluntarios') ): ?>
