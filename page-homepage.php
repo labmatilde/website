@@ -83,7 +83,8 @@
 
             <?php $values = get_field('selecionar_projetos_apresentados'); 
             if($values) : foreach($values as $value): ?>
-            <?= print_r($value); ?>
+
+            <?= print_r(get_field('pix_do_projeto')); ?>
 
             <div class="col s12 m4">
                 <div class="card sticky-action hoverable">
@@ -98,7 +99,7 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4"><?= $value->post_title; ?><i
                                 class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.
+                        <p> <?= $value->post_excerpt; ?>
                         </p>
                         <p class="card-pix"><i class="material-icons">account_balance</i><span
                                 class="content-card-pix">CHAVE
