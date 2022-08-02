@@ -7,7 +7,7 @@
 
 
 if (get_field('secao_como_doar')) {
-   echo print_r(get_field('secao_como_doar'));
+   echo print_r(get_fields('secao_como_doar', 'option'));
 }
 ?>
 
