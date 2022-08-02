@@ -92,7 +92,7 @@
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4"><?= $value->post_title; ?><i
                                 class="material-icons right">more_vert</i></span>
-                        <p><a href="<?= $value->guid; ?>">Acessar projeto</a></p>
+                        <!--<p><a href="<?= #$value->guid; ?>">Acessar projeto</a></p>-->
                     </div> <!-- card-content -->
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Projeto Familias<i
@@ -153,7 +153,7 @@
                 <h3 class="title"><?php the_field('titulo_da_bazar'); ?></h3>
                 <?php endif; ?>
                 <?php if( get_field('descricao_para_bazar') ): ?>
-                    <?php the_field('descricao_para_bazar'); ?>
+                   <div class="white-text"><?php the_field('descricao_para_bazar'); ?></div>
                 <?php endif; ?>
             </div>
             <div class="col s12 m6">
